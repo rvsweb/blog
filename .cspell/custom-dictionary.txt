@@ -1,3 +1,5 @@
+dinámicamente
 inicialización
 instanciados
 instanciando
+instanciar
