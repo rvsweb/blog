@@ -19,6 +19,8 @@ page_css:
 
 ## Concepto Clase
 
+* Una **clase** proporciona el **modelo** para los **objetos** , puede **crear** un **objeto** a partir de una **clase**
+
 > Declarar una **Clase** permite crear ``un nuevo tipo de dato``
 
 * Se entiende como un **archivo** del tipo ``.java`` cuyo interior tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
