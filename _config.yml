@@ -111,7 +111,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "RVSWeb"
+  name             : "rvsweb"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Desarrollador Junior Full Stack"
   home             : # null (default)
