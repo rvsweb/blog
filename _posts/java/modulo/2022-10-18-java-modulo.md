@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Java - Modulos
-date: 2022-18-10
+date: 2022-10-18
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
