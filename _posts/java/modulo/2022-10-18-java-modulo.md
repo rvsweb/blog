@@ -94,9 +94,17 @@ package com.domain;
 
     ![Package](/rvs.github.io/assets/images/java/modulos/package.png)
 
-* ``Package Info``
+* ``Package-Info``
 
     ![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
+
+* ``Clase Principal``
+
+    ![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
+
+* ``Modulo-Info``
+
+    ![Module-info](/rvs.github.io/assets/images/java/modulos/modulo_info.png)
 
 * La composición de un ``modulo`` sería a través del archivo ``module-info.java``
 
