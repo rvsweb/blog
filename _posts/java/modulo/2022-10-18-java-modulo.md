@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Modules
+title: Java - Modulos
 date: 2022-10-18
 classes: wide
 toc: true
@@ -17,7 +17,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Module - Modulos
+## Modulos - Module
 
 * Un ``módulo`` es un conjunto de ``clases`` que pueden contener **uno** o varios ``packages`` y que define las ``dependencias`` con el resto de ``módulos`` así como la **visibilidad** de las ``clases`` que las contienen
 
@@ -25,7 +25,7 @@ page_css:
 
 * Funcionalidad a partir de la ``versión Java 9``
 
-* Antes de la ``versión Java 9`` del 2017 ; las ``clases`` estaban organizadas a través de ``paquetes/packages`` que estaban dentro de las ``bibliotecas/libray`` de los archivos ``JAR-Java ARchive``
+* Antes de la ``versión Java 9`` del 2017 ; las ``clases`` estaban organizadas a través de ``packages`` que estaban dentro de las ``library`` de los archivos ``JAR-Java ARchive``
 
   * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una tarea o instrucción
 
@@ -82,9 +82,29 @@ package com.domain;
 
 ### Ejemplo De Uso De Modulos
 
-* Estructura del proyecto
+* Estructura principal del proyecto estandar
 
 ![modulo](/rvs.github.io/assets/images/java/modulos/modulos.png)
+
+* ``JRE System Library``
+
+    ![JRE](/rvs.github.io/assets/images/java/modulos/JAR.png)
+
+* ``Package``
+
+    ![Package](/rvs.github.io/assets/images/java/modulos/package.png)
+
+* ``Package-Info``
+
+    ![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
+
+* ``Clase Principal``
+
+    ![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
+
+* ``Modulo-Info``
+
+    ![Module-info](/rvs.github.io/assets/images/java/modulos/modulo_info.png)
 
 * La composición de un ``modulo`` sería a través del archivo ``module-info.java``
 
