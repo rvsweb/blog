@@ -19,33 +19,121 @@ page_css:
 
 ## Module - Modulos
 
+* Un ``módulo`` es un conjunto de ``clases`` que pueden contener **uno** o varios ``packages`` y que define las ``dependencias`` con el resto de ``módulos`` así como la **visibilidad** de las ``clases`` que las contienen
+
+### Inicios
+
 * Funcionalidad a partir de la ``versión Java 9``
 
-* Antes de la ``versión Java 9`` las clases estaban organizadas a través de paquetes ``packages``
-  * Un ``conjuntos de clases`` pertenece a un determinado ``paquete``
-* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos JAR ``Java Archice``
+* Antes de la ``versión Java 9`` del 2017 ; las ``clases`` estaban organizadas a través de ``paquetes/packages`` que estaban dentro de las ``bibliotecas/libray`` de los archivos ``JAR-Java ARchive``
 
-> Ejemplo
->
->* JAR.base
-> * Package 1 -> java.io
-> * Package 2 -> java.lang
-> * Package 3 -> java.net
->
->
->#
+  * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una tarea o instrucción
 
+* El sistema antiguo sin ``modulos`` provocaba desorganización a la hora de trabajar con grupos de ``clases`` y las ``dependencias`` entre ellas
+
+  * Las ``clases`` de un mismo ``paquete`` podrían estar ubicadas en 2 ``JAR`` diferentes
+
+  * Un ``conjuntos de clases`` pertenece a un determinado ``paquete`` y ese mismo ``paquete`` pertenece a ficheros ``JAR``
+
+* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos JAR ``Java Archice`` y este dentro de ``JSE System - LIBRARY``
+
+```java
+// Ejemplo
+(JSE System - LIBRARY)
+     ↓
+    JAR → Java ARchive
+     ↓
+• Package java.io → Bits.class 
+• Package java.lang → Character.class
+• Package java.net → URL.class
+```
+
+* ``MAVEN`` ayudaba a la gestión de las dependencias entre un ``JAR`` y otro con los ``packages`` que estén asociados pero es una ``herramienta`` aparte del propio sistema de ``JAR``  
 
 * La **modularidad** agrega un mayor nivel de **agregación** por encima de los ``paquetes/packages``
 
-* El nuevo elemento clave del lenguaje es el ``modulo/module``
+### Concepto
+
+* **Java 9** utiliza el concepto de ``modulo``
+
+```java
+// Ejemplo
+  MODULO
+     ↓
+ Dependencias    
+     ↓
+  Package 
+     ↓
+java.lang → Character.class
+```
+
+#### Formato de Package para Modulos
+
+```java
+/**
+ * Package Principal
+ * 
+ * Se usa para ser invocado desde otras dependencias desde una clase distinta al
+ * proyecto que fue creado
+ * 
+ */
+package com.domain;
+```
+
+### Ejemplo De Uso De Modulos
+
+* Estructura del proyecto
+
+![modulo](/rvs.github.io/assets/images/java/modulos/modulos.png)
+
+* La composición de un ``modulo`` sería a través del archivo ``module-info.java``
+
+* Dentro de los ``package`` de un proyecto tendriamos
+  * Las ``clases`` con la que vamos a trabajar
+
+  * El archivo ``package-info.java`` con la referencia al ``paquete`` de las ``clases`` que queremos utilizar
+
+```java
+/**
+ * Package : Gestion Principal de los elementos
+ * 
+ * @since 1.0
+ * @author Roboto
+ * @version 1.0
+ * @date 19 oct 2022 16:50:33
+ * 
+ */
+package modulo.ejemplo.basico.core;
+```
+
+* Fuera de la carpeta ``src`` del proyecto tendriamos un archivo llamado ``module-info.java``
+
+```java
+/**
+ * Modulo
+ *   ↓
+ * Packages ---> Dependencias --- otros Modulo
+ *   ↓
+ * Clase 
+ *
+ */
+module ConceptoModulo {
+// Añadimos 'packages' que queremos usar en otras clases
+exports modulo.ejemplo.basico.utils; // Nombre del Package con las clases a usar
+exports modulo.ejemplo.basico.core; // Nombre del Package con las clases a usar
+}
+```
+
+* El ``nuevo elemento`` clave del lenguaje es el ``module``
+
   * Un grupo reutilizable de ``paquetes`` relacionados con un **nombre único**, así como recursos (como **imágenes** y **archivos XML**) y una descriptción del ``módulo`` que especifica
 
 * Compuesto por :
 
-  1. Nombre del **modulo/module**
+  1. Nombre del ``module``
 
-  2. Dependencias del **modulo/module**
+  2. Dependencias del ``module``
+
       * ``Otros modulos de los que depende este modulo``
 
 * Los ``paquetes/packages`` explicitamente pone a disposición de ``otros modulos`` ( todos los demas ``paquetes/packages`` en el ``modulo/module`` están implicitamente no disponibles para otros ``modulos``) , los servicios que ofrecen , los ``servicios`` que consumen y a qué otros ``módulos`` permite la ``reflection``
@@ -92,10 +180,22 @@ java --list-mmodules
 
 * Cada declaración de ``módulo`` comienza con la palabra clave ``module`` , seguida de un nombre de ``módulo`` único y un cuerpo de ``módulo`` encerrado entre llaves
 
+* Sintaxis
+
 ```java
-// Ejemplo
 module modulename{
 
+}
+```
+
+* Ejemplo
+
+```java
+module java.base{
+exports java.lang;
+exports java.io;
+exports java.net;
+exports java.util;
 }
 ```
 
@@ -214,4 +314,3 @@ open module modulename {
 * De forma predeterminada, un ``módulo`` con ``acceso reflection`` en ``tiempo de ejecución/runtime execute`` a un ``paquete`` puede ver los ``tipos públicos`` del ``paquete`` (y sus tipos ``public`` y ``protected`` anidados)
 
 * El código de otros ``módulos`` puede acceder a todos los ``tipos del paquete`` expuesto y a todos los ``miembros`` dentro de esos tipos, incluidos los miembros ``private`` a través de ``setAccessible`` como en versiones anteriores de Java
-
