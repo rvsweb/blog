@@ -104,7 +104,7 @@ package com.domain;
 
 * ``Modulo-Info``
 
-    ![Module-info](/rvs.github.io/assets/images/java/modulos/modulo_info.png)
+    ![Module-info](/rvs.github.io/assets/images/java/modulos/modulos_info.png)
 
 * La composición de un ``modulo`` sería a través del archivo ``module-info.java``
 
