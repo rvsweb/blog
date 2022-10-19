@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Modulos
+title: Java - Modules
 date: 2022-10-18
 classes: wide
 toc: true
@@ -17,9 +17,24 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modulos - Module
+## Module - Modulos
 
 * Funcionalidad a partir de la ``versión Java 9``
+
+* Antes de la ``versión Java 9`` las clases estaban organizadas a través de paquetes ``packages``
+  * Un ``conjuntos de clases`` pertenece a un determinado ``paquete``
+* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos JAR ``Java Archice``
+
+> Ejemplo
+>
+>* JAR.base
+> * Package 1 -> java.io
+> * Package 2 -> java.lang
+> * Package 3 -> java.net
+>
+>
+>#
+
 
 * La **modularidad** agrega un mayor nivel de **agregación** por encima de los ``paquetes/packages``
 
@@ -52,9 +67,7 @@ page_css:
 
 * Puede crear tiempos de ejecución ``runtimes`` personalizados que consisten solo en los ``módulos/module`` que necesita para sus aplicaciones o los dispositivos a los que se dirige
 
-``
-Si un dispositivo no es compatible con las ``GUI`` , puede crear un ``tiempo de ejecución/runtime execute `` que no incluya los módulos de la GUI, lo que reduce significativamente el tamaño del ``tiempo de ejecución``
-``
+> Si un dispositivo no es compatible con las ``GUI`` , puede crear en ``tiempo de ejecución/runtime execute`` que no incluya los módulos de la GUI, lo que reduce significativamente el tamaño del ``tiempo de ejecución``
 
 * Antes de **Java 9** era posible usar muchas ``clases`` en la plataforma que no estaban pensadas para que las usaran las ``clases`` de una aplicación
 
