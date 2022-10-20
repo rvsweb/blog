@@ -94,7 +94,7 @@ package com.domain;
 
 2- ``Archivos JAR`` - Listado de los archivos ``JAR`` que contiene los ``packages`` los cuales contienen las ``clases`` con las que utilizar en el programa
 
-![JAR](/rvs.github.io/assets/images/java/modulos/JAR.png)
+![JAR](/rvs.github.io/assets/images/java/modulos/jars.png)
 
 3- ``Package`` - Contiene todas las ``clases`` compiladas para poder ser usadas en el programa que vayamos a desarrollar
 
