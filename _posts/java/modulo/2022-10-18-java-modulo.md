@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Modulos
+title: Java - Modulo
 date: 2022-10-18
 classes: wide
 toc: true
@@ -17,7 +17,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modulos - Module
+## Modulo - Module
 
 * Un ``módulo`` es un conjunto de ``clases`` que pueden contener **uno** o **varios** ``packages`` y que define las ``dependencias`` con el resto de ``módulos`` así como la **visibilidad** de las ``clases`` que las contienen con el resto de proyectos
 
