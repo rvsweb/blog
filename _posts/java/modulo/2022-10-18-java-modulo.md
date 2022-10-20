@@ -88,19 +88,19 @@ package com.domain;
 
 ![modulo](/rvs.github.io/assets/images/java/modulos/modulos.png)
 
-1. ``JRE System Library`` - Contiene todos archivos ``JAR`` para poder ejecutar el programa
+1- ``JRE System Library`` - Contiene todos archivos ``JAR`` para poder ejecutar el programa
 
 ![JRE](/rvs.github.io/assets/images/java/modulos/JAR.png)
 
-2. ``Archivos JAR`` - Listado de los archivos ``JAR`` que contiene los ``packages`` los cuales contienen las ``clases`` con las que utilizar en el programa
+2- ``Archivos JAR`` - Listado de los archivos ``JAR`` que contiene los ``packages`` los cuales contienen las ``clases`` con las que utilizar en el programa
 
 ![JAR](/rvs.github.io/assets/images/java/modulos/JAR.png)
 
-3. ``Package`` - Contiene todas las ``clases`` compiladas para poder ser usadas en el programa que vayamos a desarrollar
+3- ``Package`` - Contiene todas las ``clases`` compiladas para poder ser usadas en el programa que vayamos a desarrollar
 
 ![Package](/rvs.github.io/assets/images/java/modulos/package.png)
 
-4. ``Package-Info`` - Contiene el código que relaciona el archivo con el ``package`` del proyecto
+4- ``Package-Info`` - Contiene el código que relaciona el archivo con el ``package`` del proyecto
 
 ![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
 
@@ -115,7 +115,7 @@ package com.domain;
 package modulo.ejemplo.basico.core;
 ```
 
-5. ``Clase Principal`` - Elemento del programa donde se invocan las ``clases`` que contiene los ``packages`` del programa
+5- ``Clase Principal`` - Elemento del programa donde se invocan las ``clases`` que contiene los ``packages`` del programa
 
 ![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
 
@@ -164,7 +164,7 @@ public class Pago {
 }
 ```
 
-6. ``modulo-info.java`` - Archivo que contiene todas las referencias a los ``packages`` que queremos usar y exportar al mismo proyecto o a otros externos con los que trabajar
+6- ``modulo-info.java`` - Archivo que contiene todas las referencias a los ``packages`` que queremos usar y exportar al mismo proyecto o a otros externos con los que trabajar
 
 ![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_info.png)
 
@@ -187,7 +187,7 @@ module ConceptoModuloA {
 
 * Desde un proyecto distinto invocamos los ``packages`` que se encuentra en otros ``proyectos`` para poder invocarlos y utilizarlos en otras ``clases`` distintas
 
-7. ``modulo-info.java`` - Modulo
+7- ``modulo-info.java`` - Modulo
 
 ![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_externo.png)
 
