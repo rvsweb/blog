@@ -19,7 +19,7 @@ page_css:
 
 ## Modulos - Module
 
-* Un ``módulo`` es un conjunto de ``clases`` que pueden contener **uno** o varios ``packages`` y que define las ``dependencias`` con el resto de ``módulos`` así como la **visibilidad** de las ``clases`` que las contienen
+* Un ``módulo`` es un conjunto de ``clases`` que pueden contener **uno** o **varios** ``packages`` y que define las ``dependencias`` con el resto de ``módulos`` así como la **visibilidad** de las ``clases`` que las contienen con el resto de proyectos
 
 ### Inicios
 
@@ -27,15 +27,15 @@ page_css:
 
 * Antes de la ``versión Java 9`` del 2017 ; las ``clases`` estaban organizadas a través de ``packages`` que estaban dentro de las ``library`` de los archivos ``JAR-Java ARchive``
 
-  * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una tarea o instrucción
+  * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una **tarea** o **instrucción**
 
 * El sistema antiguo sin ``modulos`` provocaba desorganización a la hora de trabajar con grupos de ``clases`` y las ``dependencias`` entre ellas
 
-  * Las ``clases`` de un mismo ``paquete`` podrían estar ubicadas en 2 ``JAR`` diferentes
+  * Las ``clases`` de un mismo ``package`` podrían estar ubicadas en 2 ``JAR`` diferentes lo que podía provocar cierta confusión a la hora de invocarlas
 
-  * Un ``conjuntos de clases`` pertenece a un determinado ``paquete`` y ese mismo ``paquete`` pertenece a ficheros ``JAR``
+  * Un ``conjuntos de clases`` pertenece a un determinado ``package`` y ese mismo ``package`` pertenece a ficheros ``JAR``
 
-* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos JAR ``Java Archice`` y este dentro de ``JSE System - LIBRARY``
+* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos ``JAR-Java Archice`` y este dentro de ``JSE System - LIBRARY``
 
 ```java
 // Ejemplo
@@ -43,24 +43,24 @@ page_css:
      ↓
     JAR → Java ARchive
      ↓
-• Package java.io → Bits.class 
-• Package java.lang → Character.class
-• Package java.net → URL.class
+Package - java.io → Bits.class 
+Package - java.lang → Character.class
+Package - java.net → URL.class
 ```
 
-* ``MAVEN`` ayudaba a la gestión de las dependencias entre un ``JAR`` y otro con los ``packages`` que estén asociados pero es una ``herramienta`` aparte del propio sistema de ``JAR``  
+* ``MAVEN`` ayudaba a la gestión de las dependencias entre un ``JAR`` y otro con los ``packages`` que estén asociados pero es una ``herramienta`` aparte del propio sistema de ``JAR-Java ARchive``  
 
-* La **modularidad** agrega un mayor nivel de **agregación** por encima de los ``paquetes/packages``
+* La **modularidad** agrega un mayor nivel de **agregación** por encima de los ``packages``
 
 ### Concepto
 
-* **Java 9** utiliza el concepto de ``modulo``
+* **Java 9** utiliza la palabra clave de ``module/modulo``
 
 ```java
 // Ejemplo
-  MODULO
+   Module
      ↓
- Dependencias    
+ Dependencies    
      ↓
   Package 
      ↓
@@ -82,51 +82,91 @@ package com.domain;
 
 ### Ejemplo De Uso De Modulos
 
-* Estructura principal del proyecto estandar
+* Estructura principal de un proyecto estandar en **Java**
+  
+  * Desglose de todos los elementos que lo componen
 
 ![modulo](/rvs.github.io/assets/images/java/modulos/modulos.png)
 
-* ``JRE System Library``
+1. ``JRE System Library`` - Contiene todos archivos ``JAR`` para poder ejecutar el programa
 
-    ![JRE](/rvs.github.io/assets/images/java/modulos/JAR.png)
+![JRE](/rvs.github.io/assets/images/java/modulos/JAR.png)
 
-* ``Package``
+2. ``Archivos JAR`` - Listado de los archivos ``JAR`` que contiene los ``packages`` los cuales contienen las ``clases`` con las que utilizar en el programa
 
-    ![Package](/rvs.github.io/assets/images/java/modulos/package.png)
+![JAR](/rvs.github.io/assets/images/java/modulos/JAR.png)
 
-* ``Package-Info``
+3. ``Package`` - Contiene todas las ``clases`` compiladas para poder ser usadas en el programa que vayamos a desarrollar
 
-    ![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
+![Package](/rvs.github.io/assets/images/java/modulos/package.png)
 
-* ``Clase Principal``
+4. ``Package-Info`` - Contiene el código que relaciona el archivo con el ``package`` del proyecto
 
-    ![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
-
-* ``Modulo-Info``
-
-    ![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_info.png)
-
-* La composición de un ``modulo`` sería a través del archivo ``module-info.java``
-
-* Dentro de los ``package`` de un proyecto tendriamos
-  * Las ``clases`` con la que vamos a trabajar
-
-  * El archivo ``package-info.java`` con la referencia al ``paquete`` de las ``clases`` que queremos utilizar
+![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
 
 ```java
 /**
- * Package : Gestion Principal de los elementos
+ * Package Principal
  * 
- * @since 1.0
- * @author Roboto
- * @version 1.0
- * @date 19 oct 2022 16:50:33
+ * Se usa para ser invocado desde otras dependencias desde una clase distinta al
+ * proyecto que fue creado
  * 
  */
 package modulo.ejemplo.basico.core;
 ```
 
-* Fuera de la carpeta ``src`` del proyecto tendriamos un archivo llamado ``module-info.java``
+5. ``Clase Principal`` - Elemento del programa donde se invocan las ``clases`` que contiene los ``packages`` del programa
+
+![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
+
+```java
+/**
+ * Package Principal del Proyecto
+ */
+package modulo.ejemplo.basico.core;
+
+/**
+ * Importar Clase desde otro Package
+ */
+import modulo.ejemplo.basico.utils.ImpuestoIVA;
+/**
+ * Clase Principal del package para ejecutar el pago
+ */
+public class Pago {
+ /**
+  * Almacena el pago total del Pago
+  */
+ private double importe;
+ /**
+  * Establece el valor del pago total
+  * 
+  * @param importe - double - establece el pago total
+  */
+ public void setImporte(double importe) {
+  this.importe = importe;
+ }
+ /**
+  * Devuelve el valor del pago total
+  * 
+  * @return double - importe total
+  */
+ public double getImporte() {
+  return importe;
+ }
+ /**
+  * Calcula el pago total incluyendole el IVA
+  * 
+  * @return double - pago total aplicando el IVA
+  */
+ public double getImporteIVA() {
+  return ImpuestoIVA.setCalcularIVA(this.importe);
+ }
+}
+```
+
+6. ``modulo-info.java`` - Archivo que contiene todas las referencias a los ``packages`` que queremos usar y exportar al mismo proyecto o a otros externos con los que trabajar
+
+![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_info.png)
 
 ```java
 /**
@@ -134,19 +174,50 @@ package modulo.ejemplo.basico.core;
  *   ↓
  * Packages ---> Dependencias --- otros Modulo
  *   ↓
- * Clase 
- *
+ * Clases
  */
-module ConceptoModulo {
-// Añadimos 'packages' que queremos usar en otras clases
-exports modulo.ejemplo.basico.utils; // Nombre del Package con las clases a usar
-exports modulo.ejemplo.basico.core; // Nombre del Package con las clases a usar
+module ConceptoModuloA {
+// Añadimos los 'packages' que queremos usar en otras clases en otros proyectos
+// Package Principal - Contiene Clases
+ exports modulo.ejemplo.basico.core; 
+// Package Secundario - Contiene Clases Complementarias
+ exports modulo.ejemplo.basico.utils;
 }
 ```
 
-* El ``nuevo elemento`` clave del lenguaje es el ``module``
+* Desde un proyecto distinto invocamos los ``packages`` que se encuentra en otros ``proyectos`` para poder invocarlos y utilizarlos en otras ``clases`` distintas
 
-  * Un grupo reutilizable de ``paquetes`` relacionados con un **nombre único**, así como recursos (como **imágenes** y **archivos XML**) y una descriptción del ``módulo`` que especifica
+7. ``modulo-info.java`` - Modulo
+
+![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_externo.png)
+
+```java
+/**
+ * Modulo del proyecto que invoca las clases del otro proyecto
+ */
+module ConceptoModuloB {
+// Invocamos el archivo 'module-info.java' 
+// definido en el proyecto independiente 'ConceptoModuloA'
+// para poder invocar los 'packages' y que contiene las 'clases' internas 
+// con las que vamos trabajar dentro del proyecto externo 'ConceptoModuleB' 
+// Utilizamos la palabra 'requires' para invocarlo
+ requires ConceptoModuloA;
+}
+```
+
+* La composición de un ``modulo`` sería a través del archivo ``module-info.java``
+
+* Dentro de los ``packages`` de un proyecto tendriamos
+
+  1. Las ``clases`` con la que vamos a trabajar
+
+  2. El archivo ``package-info.java`` con la referencia al ``package`` de las ``clases`` que queremos utilizar dentro de nuestro ``package``
+
+* Fuera de la carpeta ``src`` del proyecto tendriamos un archivo llamado ``module-info.java``
+
+* El ``nuevo elemento`` clave del lenguaje Java son los ``module``
+
+  * Un grupo reutilizable de ``packages`` relacionados con un **nombre único**, así como recursos (como **imágenes** y **archivos XML**) y una descriptción del ``módulo`` que lo especifica
 
 * Compuesto por :
 
@@ -154,9 +225,9 @@ exports modulo.ejemplo.basico.core; // Nombre del Package con las clases a usar
 
   2. Dependencias del ``module``
 
-      * ``Otros modulos de los que depende este modulo``
+      * ``Otros modulos de los que depende un modulo en cuestión``
 
-* Los ``paquetes/packages`` explicitamente pone a disposición de ``otros modulos`` ( todos los demas ``paquetes/packages`` en el ``modulo/module`` están implicitamente no disponibles para otros ``modulos``) , los servicios que ofrecen , los ``servicios`` que consumen y a qué otros ``módulos`` permite la ``reflection``
+* Los ``packages`` explicitamente pone a disposición de ``otros modulos`` ( todos los demas ``packages`` en el ``modulo`` están implicitamente no disponibles para otros ``modulos``) , los servicios que ofrecen , los ``servicios`` que consumen y a qué otros ``módulos`` permite la ``reflection`` o ``reflexión``
 
 ### Objetivos de los modulos
 
@@ -166,14 +237,15 @@ exports modulo.ejemplo.basico.core; // Nombre del Package con las clases a usar
 
   * El sistema puede recorrer estas ``dependencias`` para determinar el subconjunto de todos los ``módulos`` necesarios para admitir su aplicación
 
-* **Encapsulación fuerte** : los ``paquetes`` en un ``módulo`` son accesibles para otros ``módulos`` solo si el módulo los exporta explícitamente
+* **Encapsulación fuerte**
+  * Los ``paquetes`` en un ``módulo`` son accesibles para otros ``módulos`` solo si el ``módulo`` los exporta explícitamente
 
 * Otro ``módulo`` no puede usar esos ``paquetes`` a menos que indique explícitamente que requiere las capacidades del otro ``módulo``
   * **Mejora la seguridad** de la plataforma porque los atacantes potenciales tienen acceso a menos clases
 
 * ``Modularidad`` lo ayuda a crear diseños más ``limpios`` y ``lógicos``
 
-* Puede crear tiempos de ejecución ``runtimes`` personalizados que consisten solo en los ``módulos/module`` que necesita para sus aplicaciones o los dispositivos a los que se dirige
+* Puede crear ``tiempos de ejecución/runtimes`` personalizados que consisten solo en los ``módulos/module`` que necesita para sus aplicaciones o los dispositivos a los que se dirige
 
 > Si un dispositivo no es compatible con las ``GUI`` , puede crear en ``tiempo de ejecución/runtime execute`` que no incluya los módulos de la GUI, lo que reduce significativamente el tamaño del ``tiempo de ejecución``
 
@@ -203,8 +275,10 @@ java --list-mmodules
 * Sintaxis
 
 ```java
+// Palabra clave
+//  ↓  Nombre del Modulo 
+//  ↓       ↓
 module modulename{
-
 }
 ```
 
@@ -221,7 +295,7 @@ exports java.util;
 
 ### Directivas
 
-* El cuerpo de la declaración del ``módulo/module`` puede estar ``vacío`` o puede ``contener`` varias ``directivas`` de ``módulo`` incluidas
+* El cuerpo de la declaración del ``módulo`` puede estar ``vacío`` o puede ``contener`` varias ``directivas`` de ``módulo`` incluidas
 
 #### requires
 
@@ -229,11 +303,14 @@ exports java.util;
 
   * Cada ``módulo`` debe indicar explícitamente sus dependencias
 
-    * Cuando el módulo A ``requires`` el módulo B, se dice que el ``módulo`` A lee el ``módulo`` B y el ``módulo`` A lee el ``módulo`` B
+    * Cuando el **módulo A** ``requires`` el **módulo B**, se dice que el **módulo A** lee el **módulo B** y el **módulo A** lee el **módulo B**
 
-  * Para especificar una dependencia en otro módulo, use ``requires``
+  * Para especificar una dependencia en otro ``módulo``, use ``requires``
 
 ```java
+// Palabra Clave
+//  ↓    Nombre del Modulo
+//  ↓         ↓
 requires moduleName;
 ```
 
