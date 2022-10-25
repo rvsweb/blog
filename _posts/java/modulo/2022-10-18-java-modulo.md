@@ -25,7 +25,7 @@ page_css:
 
 * Funcionalidad a partir de la ``versión Java 9``
 
-* Antes de la ``versión Java 9`` del 2017 ; las ``clases`` estaban organizadas a través de ``packages`` que estaban dentro de las ``library`` de los archivos ``JAR-Java ARchive``
+* Antes de la ``versión Java 9`` del **2017** ; las ``clases`` estaban organizadas a través de ``packages`` que estaban dentro de las ``library`` de los archivos ``JAR-Java ARchive``
 
   * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una **tarea** o **instrucción**
 
