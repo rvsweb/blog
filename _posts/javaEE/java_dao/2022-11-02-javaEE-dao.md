@@ -151,7 +151,7 @@ public class Pedido {
 * Separa ``acceso a datos`` necesita la ``aplicación`` (términos de ``objetos`` y ``tipos de datos``) específicos del dominio (la ``interfaces pública`` de la ``DAO``)
 como apoyar las necesidades de la ``DBMS especifico`` , un esquema de ``base de datos`` , etc. la implementación de la ``DAO``
 
-### Ventajas
+## Ventajas
 
 * Usar ``objetos`` del tipo de ``acceso a datos`` en la separación de las ``2 capas`` de la ``aplicación`` que existen y que no conocen como esta implementada una capa con respeto a la otra y que se tiene en cuenta que en el futuro puedan evolucionar de forma independiente pero mantenga la funcionalidad
 
@@ -161,7 +161,7 @@ como apoyar las necesidades de la ``DBMS especifico`` , un esquema de ``base de 
 
 * Cambios mecanismo de ``persistencia`` implementarse ``modificando`` una implementación ``DAO`` mientras el resto de aplicación ``no se ve afectado``
 
-### Desventajas
+## Desventajas
 
 * ``Leaky abstraction`` → abstracción con fugas
   > Abstracción que filtra detalles que se supone que debe abstraer
@@ -172,7 +172,7 @@ como apoyar las necesidades de la ``DBMS especifico`` , un esquema de ``base de 
 
 * La ``abstracción`` de la ``DAO`` como un **objeto** Java puede **ocultar** el **alto costo** de cada ``acceso`` a la ``base de datos`` y puede obligar a los desarrolladores a ``activar múltiples consultas`` a la ``base de datos`` para ``recuperar información`` que podría devolverse en una **sola operación** utilizando **operaciones de conjunto** de ``SQL``
 
-### Funcionamiento
+## Funcionamiento
 
 * Mueve los ``datos`` entre los ``objetos`` y los ``registros`` de la ``base de datos`` como ``intermediario``
 
@@ -180,13 +180,13 @@ como apoyar las necesidades de la ``DBMS especifico`` , un esquema de ``base de 
 
 * Dentro del contexto de la ``programación Java`` los ``objetos de acceso a datos`` como concepto de diseño se pueden ``implementar`` de distintas formas dependiendo de la ``interfaz`` que separe las partes de ``acceso a los datos`` de la ``lógica de la aplicación`` como ``Framework`` y demás elementos que lo compongan
 
-### Herramientas Populares de los ORM para realizar DAO
+## Herramientas Populares de los ORM para realizar DAO
 
 1. Frameworks : ``Hibernate, iBATIS``
 
 2. Library : ``JPA, como Apache OpenJPA``
 
-### Casos de uso
+## Casos de uso
 
 * ``App`` de contratos a desarrollar para 2 clientes diferentes
 
