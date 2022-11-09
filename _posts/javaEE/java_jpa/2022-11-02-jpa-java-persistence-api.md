@@ -1,6 +1,6 @@
 ---
 layout: single
-title: JavaEE - JPA
+title: JavaEE - JPA - Java Persistence API
 date: 2022-11-02
 classes: wide
 toc: true
@@ -21,15 +21,25 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## JPA
+## Definición
 
-* ``Java Persistence API``
+* Especificación recogida en el documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
 
-  * ``API`` de persistencia desarrollada para la **plataforma Java EE**
+  * Define **como gestionar las funcionalidades** de las **persistencias de datos** en las aplicaciones **Java**
+
+  * El documento ``JPA`` no implementa nada ; ``indica las pautas a seguir``
+  
+  * Para trabajar con el documento necesitaremos utilizar un ``framework`` como ``Hibernate``
+
+ ``JPA`` → **Java Persistence API**
+
+* ``API`` de persistencia desarrollada para la **plataforma Java EE**
+
+## Concepto
 
 * Maneja ``datos relacionales`` en aplicaciones usando plataforma ``JAVA-SE`` y ``JAVA-EE``
 
-## Areas de la Persistencia
+## Areas de Persistencia
 
 * ``API`` definida en el ``package javax.persistence``
 
@@ -37,8 +47,12 @@ page_css:
 
 * ``Metadatos`` objeto/relacional
 
-> Objetivo de la API JPA no perder la orientación a objetos al interactuar con la base de datos (siguiendo el patrón mapeo-objeto-relacional) y usar objetos regulares ([POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
+## Objetivos de la API JPA
 
-* Para trabajar con las ``anotaciones`` dentro del ámbito del ``mapeo objeto relacional``
+* No perder la ``orientación a objetos`` al interactuar con la ``base de datos`` **(siguiendo el patrón mapeo-objeto-relacional)**
+
+* Usar ``objetos regulares`` [POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
+
+* Trabajar con las ``anotaciones`` dentro del ámbito del ``mapeo objeto relacional`` utilizando
   
   * ``package`` → ``javax.persistence``

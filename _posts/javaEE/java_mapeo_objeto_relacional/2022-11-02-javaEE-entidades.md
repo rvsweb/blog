@@ -1,6 +1,6 @@
 ---
 layout: single
-title: JavaEE - Entidades
+title: JavaEE - Concepto Entidades
 date: 2022-11-02
 classes: wide
 toc: true

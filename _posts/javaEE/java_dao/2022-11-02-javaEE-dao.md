@@ -1,6 +1,6 @@
 ---
 layout: single
-title: JavaEE - DAO
+title: JavaEE - DAO - Data Access Object
 date: 2022-11-04
 classes: wide
 toc: true
@@ -15,13 +15,26 @@ categories:
 tags:
   - java-hibernate 
   - java-dao 
+  - java-abstract 
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## DAO - Objeto de Acceso a Datos
+## Definición
 
-> Acceder a datos utilizando objetos mediante los métodos de una clase especializada en Java
+* ``DAO`` → ``Data Access Object`` → **Objeto de Acceso a Datos**
+
+## Concepto
+
+* Utilizado para ocultar detalles de la **implementación** de la **capa de persistencia**
+
+* Ofrecer ``interfaz`` sencilla en ciertas partes de la aplicación
+
+> Necesario cuando se utilizan API de bajo nivel como JDBC en las que las operaciones sobre la base de datos conllevan utilización de sentencias SQL que queremos aislar de otras capas de la aplicación
+
+## Utilidad
+
+* ``Acceder a datos`` utilizando ``objetos`` mediante los ``métodos`` de una ``clase especializada en Java``
 
 * Mediante ``entidades`` que se emparejan con ``tablas`` de la ``base de datos``
 
