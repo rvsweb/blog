@@ -37,7 +37,7 @@ page_css:
 
 * ``Metadatos`` objeto/relacional
 
-> Objetivo de la API JPA no perder la orientación a objetos al interactuar con la base de datos (siguiendo el patrón mapeo-objeto-relacional) y usar objetos regulares ([POJOS](http://www.limni.net)
+> Objetivo de la API JPA no perder la orientación a objetos al interactuar con la base de datos (siguiendo el patrón mapeo-objeto-relacional) y usar objetos regulares ([POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
 
 * Para trabajar con las ``anotaciones`` dentro del ámbito del ``mapeo objeto relacional``
   
