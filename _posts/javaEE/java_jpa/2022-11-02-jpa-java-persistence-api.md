@@ -21,21 +21,31 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Definición
-
-* Especificación recogida en el documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
-
-  * Define **como gestionar las funcionalidades** de las **persistencias de datos** en las aplicaciones **Java**
-
-  * El documento ``JPA`` no implementa nada ; ``indica las pautas a seguir``
-  
-  * Para trabajar con el documento necesitaremos utilizar un ``framework`` como ``Hibernate``
+## Definición - JPA
 
  ``JPA`` → **Java Persistence API**
 
-* ``API`` de persistencia desarrollada para la **plataforma Java EE**
+* Especificación dentro del documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
 
-## Concepto
+* Define **como gestionar las funcionalidades** de las **persistencias de datos** en las aplicaciones **Java**
+
+## Conceptos
+
+* El documento ``JPA`` no implementan nada
+
+  * ``Indica las pautas a seguir``
+  
+* Para trabajar con el documento necesitaremos utilizar un ``framework`` como por ejemplo
+
+  * ``Hibernate``
+  
+  * ``DataNucleus``
+  
+  * ``EclipseLink``
+  
+  * ``ObjectDB``
+
+* ``API`` de persistencia desarrollada para la ``plataforma Java-EE``
 
 * Maneja ``datos relacionales`` en aplicaciones usando plataforma ``JAVA-SE`` y ``JAVA-EE``
 
@@ -45,7 +55,7 @@ page_css:
 
 * Lenguaje de consulta ``JAVA Persistence Query Language`` ``(JPQL)``
 
-* ``Metadatos`` objeto/relacional
+* ``Metadatos`` **objeto/relacional**
 
 ## Objetivos de la API JPA
 

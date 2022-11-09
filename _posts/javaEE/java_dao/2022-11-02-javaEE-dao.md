@@ -20,7 +20,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Definición
+## Definición - DAO
 
 * ``DAO`` → ``Data Access Object`` → **Objeto de Acceso a Datos**
 

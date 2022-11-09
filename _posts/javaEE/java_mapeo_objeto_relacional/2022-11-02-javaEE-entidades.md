@@ -18,11 +18,11 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Concepto de Entidad
+## Concepto - Entidad
 
-* **Objetivo** del **mapeo objeto relacional** entre **Java** y la **base de datos** es representar la **programación orientada a objetos** mediante una **estructura de datos**
+* **Objetivo** del ``mapeo objeto relacional`` entre ``Java`` y la ``base de datos`` es representar la ``programación orientada a objetos`` mediante una ``estructura de datos``
 
-  * Correspondencia entre **clases** y **tablas**
+  * Correspondencia entre ``clases`` y ``tablas``
 
     * Enlace : [javax.persistence.Entity](https://docs.oracle.com/javaee/7/api/)
 
@@ -31,9 +31,11 @@ page_css:
 * Formas de realizarlo
 
   1. Mediante un archivo externo en ``XML`` que contiene la configuración del mapeo
-      * ``sistema antiguo``
 
-  2. Por ``anotaciones``
+      * ``Sistema antiguo``
+
+  2. Por ``Anotaciones``
+  
       * Se colocan encima de los elementos que componen una clase en Java sobre todo en los ``métodos`` que componen el mapeo
 
 ### Funcionamiento

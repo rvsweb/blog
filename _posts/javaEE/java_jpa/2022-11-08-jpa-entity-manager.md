@@ -1,6 +1,6 @@
 ---
 layout: single
-title: JavaEE - JPA
+title: JavaEE - JPA - Java Persistence API
 date: 2022-11-02
 classes: wide
 toc: true
@@ -27,14 +27,14 @@ page_css:
 
 * Una ``instancia`` de ``EntityManager`` asociada contexto de la ``persistencia``
 
-* Contexto de ``persistencia`` ( conjunto de ``instancias`` de entidad ) para cualquier identidad ``persistente`` existe una instancia de entidad única
+* Contexto de ``persistencia`` ( conjunto de ``instancias`` de entidad ) para cualquier identidad ``persistente`` existe una instancia de **entidad única**
 
 * Dentro ``contexto de persistencia`` ( se gestiona las ``instancias`` de ``entidad`` y su ``ciclo de vida``)
 
-* ``API (application programming interface)`` de ``EntityManager`` se usa para ``crear`` / ``eliminar`` instancias de entidades persistentes ( para buscar entidades por su ``clave principal`` y para ``consultar entidades``)
+* ``API (application programming interface)`` de ``EntityManager`` se usa para ``crear`` / ``eliminar`` instancias de ``entidades persistentes`` ( para buscar ``entidades`` por su ``clave principal`` y para ``consultar entidades``)
 
-* Conjunto de ``entidades`` pueden gestionar instancias de ``EntityManager`` definido por una unidad de persistencia
+* Conjunto de ``entidades`` pueden ``gestionar instancias`` de ``EntityManager`` definido por una unidad de persistencia
 
-* Unidad de persistencia define :
+* Unidad de ``persistencia`` define :
 
-  * Unidad de ``persistencia`` define el conjunto de todas las ``clases`` relacionadas o agrupadas por la aplicación que debe colocarse en su asignación a una ``única base de datos``
+  * Unidad de ``persistencia`` define el conjunto de todas las ``clases relacionadas`` o agrupadas por la aplicación que debe colocarse en su asignación a una ``única base de datos``
