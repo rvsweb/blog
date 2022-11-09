@@ -19,12 +19,12 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Framework Hibernate
+## Framework - Hibernate
 
 * Configura la persistencia del proyecto indicándole a que base de datos comunicarse , conectarse y con que datos
 
 * Implementación de ``persistencia`` más usado y anterior a ``JPA``
- 
+
 * Para trabajar con las ``anotaciones`` dentro del ámbito del mapeo objeto relacional
 
   * ``package`` → ``org.hibernate.annotations``
