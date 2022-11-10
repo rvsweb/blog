@@ -30,13 +30,13 @@ page_css:
 
 * Formas de realizarlo
 
-  1. Mediante un archivo externo en ``XML`` que contiene la configuración del mapeo
+  1. Mediante un ``archivo externo`` en ``XML`` que contiene la configuración del ``mapeo``
 
       * ``Sistema antiguo``
 
   2. Por ``Anotaciones``
-  
-      * Se colocan encima de los elementos que componen una clase en Java sobre todo en los ``métodos`` que componen el mapeo
+
+      * Se colocan encima de los elementos que componen una ``clase`` en Java sobre todo en los ``métodos`` que componen el ``mapeo``
 
 ### Funcionamiento
 

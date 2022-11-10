@@ -21,13 +21,13 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Blog sobre desarrollo Full Stack"
+title                    : "Blog Sobre Desarrollo Full-Stack"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 # name                     : &name "RVS"
 name                     : "RVS"
 # description              : &description "Blog sobre Programación e Informática"
-description              : "Blog sobre Programación e Informática"
+description              : "Blog Sobre Programación e Informática"
 url                      : "https://rvsweb.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rvsweb/rvs.github.io"
@@ -113,14 +113,14 @@ analytics:
 author:
   name             : "RVSWeb"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Desarrollador Junior Full Stack"
+  bio              : "Desarrollador Junior Full-Stack"
   home             : # null (default)
   location         : "Spain"
-  email            : "otracuentamovil101@gmail.com"
+  email            : "followtherules101@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "otracuentamovil101@gmail.com"
+      url: "followtherules101@gmail.com"
     # - label: "Website"
       # icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

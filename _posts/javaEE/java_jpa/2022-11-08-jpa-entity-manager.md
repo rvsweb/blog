@@ -33,8 +33,8 @@ page_css:
 
 * ``API (application programming interface)`` de ``EntityManager`` se usa para ``crear`` / ``eliminar`` instancias de ``entidades persistentes`` ( para buscar ``entidades`` por su ``clave principal`` y para ``consultar entidades``)
 
-* Conjunto de ``entidades`` pueden ``gestionar instancias`` de ``EntityManager`` definido por una unidad de persistencia
+* Conjunto de ``entidades`` pueden ``gestionar instancias`` de ``EntityManager`` definido por una ``unidad de persistencia``
 
-* Unidad de ``persistencia`` define :
+* Unidad de ``persistencia``
 
-  * Unidad de ``persistencia`` define el conjunto de todas las ``clases relacionadas`` o agrupadas por la aplicación que debe colocarse en su asignación a una ``única base de datos``
+  * Define el conjunto de todas las ``clases relacionadas`` o ``agrupadas`` por la aplicación que debe colocarse en su asignación a una ``única base de datos``
