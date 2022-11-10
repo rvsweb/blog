@@ -25,17 +25,25 @@ page_css:
 
  ``JPA`` → **Java Persistence API**
 
-* Especificación dentro del documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
+* Especificación del documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
 
-* Define **como gestionar las funcionalidades** de las **persistencias de datos** en las aplicaciones **Java**
+* Define ``como gestionar las funcionalidades concretas de la API`` como puede ser en este caso la ``capa de persistencia`` con ``objetos Java``
+
+  * Ejemplo de pautas a seguir dentro de la especificación
+
+  1.``Anotaciones que han de usarse``
+  
+  2.``Como han de persistirse los objetos que han de buscarse``
+  
+  3.``Cual es el ciclo de vida``
 
 ## Conceptos
 
-* El documento ``JPA`` no implementan nada
+* La especificación ``JPA`` **no implementan nada**
 
-  * ``Indica las pautas a seguir``
+  * ``Solo indica las pautas a seguir`` a la hora de desarrollar un aplicación utilizando esta ``API``
   
-* Para trabajar con el documento necesitaremos utilizar un ``framework`` como por ejemplo
+* Para trabajar con la ``API`` necesitaremos utilizar un ``framework`` como por ejemplo
 
   * ``Hibernate``
   

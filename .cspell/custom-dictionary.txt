@@ -1,5 +1,13 @@
 dinámicamente
+encapsulación
+github
 inicialización
 instanciados
 instanciando
 instanciar
+javax
+jekyll
+JPQL
+POJOS
+preespecificadas
+rvsweb

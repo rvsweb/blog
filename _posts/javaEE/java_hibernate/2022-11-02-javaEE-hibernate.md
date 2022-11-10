@@ -21,7 +21,7 @@ page_css:
 
 ## Framework - Hibernate
 
-* Configura la persistencia del proyecto indicándole a que base de datos comunicarse , conectarse y con que datos
+* Configura la ``persistencia`` del proyecto indicándole a que ``base de datos`` comunicarse , conectarse y con que datos realizarlos
 
 * Implementación de ``persistencia`` más usado y anterior a ``JPA``
 
