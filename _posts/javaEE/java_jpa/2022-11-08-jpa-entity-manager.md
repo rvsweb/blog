@@ -1,6 +1,6 @@
 ---
 layout: single
-title: JavaEE - JPA - Java Persistence API
+title: JavaEE - JPA - EntityManager
 date: 2022-11-02
 classes: wide
 toc: true
