@@ -107,7 +107,7 @@ analytics:
   # provider               : google # false (default), "google", "google-universal", "google-gtag", "custom"
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-7DKV75VT5P"
+    tracking_id          : "G-MHG530290X"
     anonymize_ip         : false # true, false (default)
 
 # Site Author
