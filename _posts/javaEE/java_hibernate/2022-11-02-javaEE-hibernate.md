@@ -28,3 +28,4 @@ page_css:
 * Para trabajar con las ``anotaciones`` dentro del ámbito del mapeo objeto relacional
 
   * ``package`` → ``org.hibernate.annotations``
+
