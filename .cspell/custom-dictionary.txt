@@ -1,5 +1,7 @@
 dinámicamente
 encapsulación
+endcapture
+endunless
 github
 inicialización
 instanciados
@@ -8,6 +10,8 @@ instanciar
 javax
 jekyll
 JPQL
+markdownify
 POJOS
 preespecificadas
+rgba
 rvsweb

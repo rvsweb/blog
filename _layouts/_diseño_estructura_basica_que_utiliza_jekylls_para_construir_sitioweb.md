@@ -28,7 +28,7 @@ permalink: /404.html
 ```
 
 La plantilla `layout: single` esta en el directorio `_layout` el cual se utiliza para
-crear los diseños y las estructuras básicas de ambito genérico para el sitio web.
+crear los diseños y las estructuras básicas de ámbito genérico para el sitio web.
 
 Contenido del archivo:
 
@@ -53,7 +53,7 @@ layout: default
 ```
 
 Cada archivo dentro del directorio `_layout` tienen una o más estructuras básicas en
-codigo `HTML` y `Ruby` que se añaden a las paginas que se van creando mediante el tag `layout`
+código `HTML` y `Ruby` que se añaden a las paginas que se van creando mediante el tag `layout`
 
 Los archivos del directorio `_layout` tiene **snippet** de código **Ruby** del
 directorio `_include` que se insertan automáticamente cuando se invocan.

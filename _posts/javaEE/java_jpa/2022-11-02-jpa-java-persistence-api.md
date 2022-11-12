@@ -25,7 +25,13 @@ page_css:
 
  ``JPA`` → **Java Persistence API**
 
+* Creado en 2006
+
 * Especificación del documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
+
+  * ``No proporciona clases para poder trabajar con la información`` sino ``interfaces`` que podemos usar para ``implementar`` la ``capa de persistencia`` de nuestra aplicación ayudándonos en alguna implementación concreta de ``JPA``
+
+> En la practica utilizarás una ``Librería de Persistencia`` que implemente ``JPA , no directamente JPA``  
 
 * Define ``como gestionar las funcionalidades concretas de la API`` como puede ser en este caso la ``capa de persistencia`` con ``objetos Java``
 
