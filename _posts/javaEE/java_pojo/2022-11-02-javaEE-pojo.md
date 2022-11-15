@@ -36,7 +36,7 @@ page_css:
 
 * ``Objeto`` de  ``Java`` no está sujeto a ninguna otra restricción que no este impuesta por la especificación del ``lenguaje Java``
 
-### POJO no debería
+### POJO no debería ser
 
 1.**Extender** ``extend`` de preespecificadas ``clases``
 
