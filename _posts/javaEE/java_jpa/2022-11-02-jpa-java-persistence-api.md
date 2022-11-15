@@ -25,17 +25,20 @@ page_css:
 
  ``JPA`` → **Java Persistence API**
 
-* Creado en 2006
+* Creado en **2006**
 
 * Especificación del documento [JSR338](https://jcp.org/aboutJava/communityprocess/mrel/jsr338/index.html)
 
-  * ``No proporciona clases para poder trabajar con la información`` sino ``interfaces`` que podemos usar para ``implementar`` la ``capa de persistencia`` de nuestra aplicación ayudándonos en alguna implementación concreta de ``JPA``
+* ``No proporciona clases para trabajar con la información``
 
-> En la practica utilizarás una ``Librería de Persistencia`` que implemente ``JPA , no directamente JPA``  
+* ``Proporciona interfaces`` podemos usar para ``implementar`` la ``capa de persistencia`` de la aplicación ayudándonos de la implementación ``JPA``
 
-* Define ``como gestionar las funcionalidades concretas de la API`` como puede ser en este caso la ``capa de persistencia`` con ``objetos Java``
+> En la practica utilizarás una ``librerías de persistencia`` que implemente ``JPA`` , no directamente ``JPA``  
 
-  * Ejemplo de pautas a seguir dentro de la especificación
+* Define ``como gestionar las funcionalidades concretas de la API`` 
+  * La ``capa de persistencia`` con ``objetos Java``
+
+* Ejemplo de pautas a seguir dentro de la especificación
 
   1.``Anotaciones que han de usarse``
   
@@ -47,9 +50,11 @@ page_css:
 
 * La especificación ``JPA`` **no implementan nada**
 
-  * ``Solo indica las pautas a seguir`` a la hora de desarrollar un aplicación utilizando esta ``API``
+* ``Solo indica las pautas a seguir`` a la hora de desarrollar un aplicación utilizando la ``API``
   
-* Para trabajar con la ``API`` necesitaremos utilizar un ``framework`` como por ejemplo
+* Para trabajar con la ``API`` necesitaremos utilizar un ``framework``
+
+* Ejemplo
 
   * ``Hibernate``
   
@@ -73,10 +78,10 @@ page_css:
 
 ## Objetivos de la API JPA
 
-* No perder la ``orientación a objetos`` al interactuar con la ``base de datos`` **(siguiendo el patrón mapeo-objeto-relacional)**
+* Utilizar ``orientación a objetos`` al interactuar con ``base de datos`` (siguiendo el patrón ``mapeo-objeto-relacional``)
 
 * Usar ``objetos regulares`` [POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
 
-* Trabajar con las ``anotaciones`` dentro del ámbito del ``mapeo objeto relacional`` utilizando
+* Trabajar con ``anotaciones`` dentro del ámbito ``mapeo objeto relacional`` utilizando
   
   * ``package`` → ``javax.persistence``
