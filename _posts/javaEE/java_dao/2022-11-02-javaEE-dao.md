@@ -22,13 +22,19 @@ page_css:
 
 ## Definición - DAO
 
-* ``DAO`` → ``Data Access Object`` → **Objeto de Acceso a Datos**
+* ``DAO`` → ``Data Access Object`` ↔ **Objeto de Acceso a Datos**
 
 ## Concepto
 
-* Utilizado para ocultar detalles de la **implementación** de la **capa de persistencia**
+* Crear ``interface``
 
-* Ofrecer ``interfaz`` sencilla en ciertas partes de la aplicación
+* Tratamos distintos tipos de datos ``"entidades"`` en cada dato
+
+* Parametrizamos la interfaz creando un ``tipos genéricos ↔ <T>``
+
+* Utilizado para ocultar detalles de la **implementación** dentro de la **capa de persistencia**
+
+* Ofrecer una ``interfaz`` sencillas en ciertas partes de la aplicación
 
 > Necesario cuando se utilizan API de bajo nivel como JDBC en las que las operaciones sobre la base de datos conllevan utilización de sentencias SQL que queremos aislar de otras capas de la aplicación
 
@@ -36,12 +42,16 @@ page_css:
 
 * ``Acceder a datos`` utilizando ``objetos`` mediante los ``métodos`` de una ``clase especializada en Java``
 
-* Mediante ``entidades`` que se emparejan con ``tablas`` de la ``base de datos``
+* Mediante ``entidades`` que se emparejan con ``tablas`` en la ``base de datos``
 
   * ``Métodos`` del ``DAO`` que se **emparejan** con las operaciones ``CRUD``
+
     1. **C** → ``Create``
+
     2. **R** → ``Read``
+
     3. **U** → ``Update``
+
     4. **D** → ``Delete``
 
 > Actúa de intermediario entre la aplicación y la base de datos
@@ -49,109 +59,57 @@ page_css:
 * ``Clases DAO`` habrá una por ``entidad`` o ``tabla`` de la ``base de datos`` y tendremos ``métodos`` para realizar ``consultas genéricas`` o ``adaptadas`` a nuestra ``lógica de negocio``
 
 ```java
-package rvs.orm.gestor;
-
-import java.util.Date;
-
-// Librerias de persistencia JPA
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package project.orm.manager.dao;
 
 /**
- * Tabla → mapea → Clase (Entidad)
- * 
- * Columna → mapea → Atributo
  * 
  */
-@Entity // Debajo de @Entity meteremos la anotación de tabla "pedidos"
-@Table(name = "pedido")
-public class Pedido {
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * @author rad
+ *
+ * @param <T> - interface parametrizable mediante el complemento <T>
+ */
+public interface Dao<T> {
 
  /**
-  * Columna "Id" que conecta con la tabla 'pedido'
+  * Recupera registro dentro de un objeto de tipo generico <T> de la bd
   * 
-  * Se usa para marcar la clave primaria dentro de la tabla 'pedido' que
-  * utilizamos como anotación @Id
-  */
- @Column(name = "id")
- @Id // Marcamos la clave privada de la tabla "pedido"
- @GeneratedValue(strategy = GenerationType.IDENTITY) // Columna auto-generadora (Se usa para evitar tener que poner
-              // @Column)
- private int id;
-
- /**
-  * Columna "referencia" que conecta con la tabla 'pedido'
-  */
- @Column(name = "referencia") // Indicamos el nombre de la columna en la tabla @Column
- private String referencia;
-
- /**
-  * Columna "fecha" que conecta con la tabla 'pedido'
-  */
- @Column(name = "fecha")
- private Date fecha;
-
- /**
-  * Metodo de instancia
+  * @param id - Recibe 'id' en formato long y devolvera o no un objeto de tipo generico de la clase
   * 
-  * Obtenemos el id de la tabla pedidos
-  * 
-  * @return - int - id de la tabla "pedido"
+  * @return - Si no encuentra ningún registro retornamos un objeto Opcional sino el long 'id'
   */
- public int getId() {
-  return id;
- }
+ Optional<T> get(long id);
 
  /**
-  * Procedimiento de instancia
+  * Obtenemos todos los registros de tipo objeto generico <T> 
   * 
-  * @param id - int - establece el id de la tabla "pedido"
+  * @return - Todos los objetos del tipo generico<T>
   */
- public void setId(int id) {
-  this.id = id;
- }
+ List<T> getAll();
 
  /**
-  * Metodo de instancia
+  * Crear nuevo objeto tipo generico <T> para guardarlos en la bd
   * 
-  * @return - String - devuelve la referencia de la tabla 'pedido'
+  * @param t - Recibe un objeto y no devolvera nada porque se guardará en la base de datos
   */
- public String getReferencia() {
-  return referencia;
- }
+ void save(T t);
 
  /**
-  * Metodo de instancia
+  * Actualizar objeto tipo generico <T> con los datos 
   * 
-  * @param referencia - String - establece el valor de la referencia de la tabla
-  *                   'pedido'
+  * @param t - Recibe el objeto de tipo Generico<T> a actualizar y no devuelve nada
   */
- public void setReferencia(String referencia) {
-  this.referencia = referencia;
- }
+ void update(T t);
 
  /**
-  * Metodo de instancia
+  * Borrar objeto tipo generico <T> con los datos
   * 
-  * @return - fecha - Date - objeto de la clase Date para establecer la fecha de
-  *         la tabla 'pedido'
+  * @param t
   */
- public Date getDate() {
-  return fecha;
- }
-
- /**
-  * Procedimiento de instancia
-  * 
-  * @param fecha - Date - establece la fecha de la tabla 'pedido'
-  */
- public void setDate(Date fecha) {
-  this.fecha = fecha;
- }
+ void delete(T t);
 }
 ```
 

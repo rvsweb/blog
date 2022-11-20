@@ -78,10 +78,26 @@ page_css:
 
 ## Objetivos de la API JPA
 
-* Utilizar ``orientación a objetos`` al interactuar con ``base de datos`` (siguiendo el patrón ``mapeo-objeto-relacional``)
-
-* Usar ``objetos regulares`` [POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
-
 * Trabajar con ``anotaciones`` dentro del ámbito ``mapeo objeto relacional`` utilizando
   
   * ``package`` → ``javax.persistence``
+
+* Utilizar ``orientación a objetos`` al interactuar con ``base de datos`` (siguiendo el patrón ``mapeo-objeto-relacional``)
+
+* El ``mapeo`` entre ``objetos`` de ``Java`` y las ``tablas`` de la ``base de datos`` se define a traves del ``metadatos de persistencia``
+
+* Proveedor de ``JPA`` utilizará información de ``metadatos`` de ``persistencia`` para realizar ``operaciones`` de ``base de datos``
+
+* ``Metadatos JPA`` se definen a través de ``anotaciones`` en la ``clases Java``
+
+* ``Configuración XML`` sobrescribe ``anotaciones``
+
+  * Se definen a través de ``archivos XML`` o combinación de ambos
+
+    > La configuración XML sobrescribe las anotaciones
+
+* ``JPA`` define ``lenguaje de consulta`` similar a ``SQL`` para ``consultas estáticas`` y ``dinámicas``
+
+* Proveedores de ``persistencia JPA`` ofrecen la opción de ``crear esquemas`` de ``base de datos`` automáticamente en función de los ``metadatos``
+
+* Usar ``objetos regulares`` [POJOS](https://rvsweb.github.io/rvs.github.io/java/java-manual/java-ee/java-pojo/)
