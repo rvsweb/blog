@@ -62,5 +62,4 @@ page_css:
   * Usar ``anotaciones standard`` de ``JPA``
 
   * Evitar hacer uso directo de funciones de Hibernate para tener mayor portabilidad del código
-
   
