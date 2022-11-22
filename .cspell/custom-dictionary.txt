@@ -3,6 +3,7 @@ encapsulación
 endcapture
 endunless
 github
+Gson
 inicialización
 instanciados
 instanciando
@@ -15,3 +16,5 @@ POJOS
 preespecificadas
 rgba
 rvsweb
+serializar
+servlet
