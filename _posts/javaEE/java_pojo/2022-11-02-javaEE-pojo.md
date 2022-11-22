@@ -142,7 +142,7 @@ public class Persona {
 }
 ```
 
-### Ejemplo 2 - Clase POJO
+## Ejemplo 2 - Clase POJO
 
 ```java
 public class MyBean {
