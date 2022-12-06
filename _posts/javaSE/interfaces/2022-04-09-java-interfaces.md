@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Inteface
+title: Java - Interface
 date: 2022-04-09
 classes: wide
 toc: true
@@ -13,7 +13,7 @@ categories:
   - java-manual
 tags:
   - java-clase
-  - java-inteface
+  - java-interface
 page_css: 
   - /assets/css/mi-css.css
 ---
