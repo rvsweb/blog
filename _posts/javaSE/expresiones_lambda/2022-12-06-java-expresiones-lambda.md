@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Interfaz Funcional
+title: Java - Expresiones Lambda
 date: 2022-12-06
 classes: wide
 toc: true
@@ -13,24 +13,79 @@ categories:
   - java-manual
 tags:
   - java-clase
-  - java-interface
+  - java-expresiones-lambda
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## Interfaz Funcional
+## Expresiones Lambda
 
-* Especifica el código de **criterios de búsqueda** con una ``expresión lambda``
+* Se utilizan entre otros motivos para resolver los problemas que producían el uso las ``clases anónimas``
 
-* ``Interfaz Funcional`` → Cualquier ``interfaz`` que contiene solo un ``MÉTODO ABSTRACTO``
+* La implementación de la ``clase anónima`` era simple como la creación de una ``interfaz`` que contiene ``un solo método`` lo que producía que la sintaxis de las ``clases anónimas`` pudiera parecer difícil de manejar y difícil de entender
 
-* ``Interfaz Funcional`` → Puede contener uno o mas ``métodos predeterminados`` o ``métodos estáticos``
+* Antiguamente se intentaba pasar la funcionalidad de un ``método`` como ``argumento`` a otro ``método``, como la acción que se debía tomar cuando alguien por ejemplo ; hacía clic en un botón
 
-* ``Interfaz Funcional`` → Contiene solo un ``método abstracto`` que puede omitir el nombre de ese ``método`` cuando lo implemente
+* Las ``expresiones lambda`` le permiten tratar la funcionalidad como ``argumento de método`` o el ``código`` como ``datos``
 
-* Para hacerlo en lugar de usar una expresión de ``clase anónima`` se usa una ``expresión lambda`` que se resalta en la siguiente invocación del método
+* Las ``clases anónimas`` le muestra cómo implementar una ``clase base`` sin darle un nombre
 
-## Ejemplo
+  * Aunque esto suele ser más conciso que una ``clase con nombre`` , para las ``clases con un solo método`` , incluso una ``clase anónima`` parece un poco excesiva y engorrosa
+
+* Las ``expresiones lambda`` le permiten expresar ``instancias de clases`` de ``método único`` de forma más compacta.
+
+## Ejemplo de Expresión Lambda
+
+* ``Interfaz``
+
+  * Se usa para comprobar el tipo de ``objeto`` que recibirá el método de la ``clase`` que lo implemente
+
+```java
+public interface CheckPerson {
+/**
+  * Método de la interface
+  * 
+  * Devuelve si el objeto es de tipo Person o no
+  * 
+  * Se utiliza para comprobar que el parámetro que recibe el método es un objeto
+  * de tipo Person y devolver un boolean
+  * 
+  * @param p - objeto - Objeto de la clase Person
+  * @return - boolean - Devuelve true o false dependiendo del objeto que reciba
+  */
+boolean test(Person p);
+}
+```
+
+* ``Clase Concreta`` que implementa la interface ``CheckPerson``
+
+  * La ``clase`` implementa la ``interfaz CheckPerson`` al especificar una implementación para la prueba del ``método``
+
+  * Este ``método`` filtra miembros que son ``elegibles`` para el ``método``  devuelve un valor ``verdadero`` si su ``parámetro Person`` es ``MAN`` y tiene **entre 18 y 25 años**
+
+```java
+// Clase Concreta que implementa la interface CheckPerson para poder usarse
+public class CheckPersonEligibleForSelectiveService implements CheckPerson {
+/**
+  * Método de instancia
+  * 
+  * Implementa el método 'test' de la Interface CheckPerson
+  * 
+  * @param - objeto - Person - Recibe un objeto person para hacer las
+  *          comprobaciones
+  * @return - boolean - Devuelve - Si la edad del objeto Person esta dentro de
+  *         los parámetros establecidos por el objeto
+  */
+ @Override
+  public boolean test(Person p) {
+    return p.gender == Person.Sex.MALE &&
+      p.getAge() >= 18 &&
+      p.getAge() <= 25;
+  }
+}
+```
+
+* ``Clase Person``
 
 ```java
 /**
@@ -210,7 +265,6 @@ public class Person {
  public static List<Person> createRoster() {
 
   List<Person> roster = new ArrayList<>();
-
   roster.add(new Person("Fred", IsoChronology.INSTANCE.date(1980, 6, 20), Person.Sex.MALE, "fred@example.com"));
   roster.add(new Person("Jane", IsoChronology.INSTANCE.date(1990, 7, 15), Person.Sex.FEMALE, "jane@example.com"));
   roster.add(new Person("George", IsoChronology.INSTANCE.date(1991, 8, 13), Person.Sex.MALE, "george@example.com"));
@@ -219,8 +273,6 @@ public class Person {
  }
 }
 ```
-
-### Ejemplo de Expresión Lambda
 
 * Invocación de una ``Expresión Lambda``
 
@@ -234,11 +286,29 @@ public class Main {
 
  public static void main(String[] args) {
 
-  //Instanciación e invocación del método 'printPersons(Objeto de tipo List<Person> , Invocación de la clase con el método test implementado)'
+// Instanciación e invocación del método 'printPersons(Objeto de tipo List<Person> , Invocación de la clase con el método test implementado)'
   Person.printPersons(Person.createRoster(), new CheckPersonEligibleForSelectiveService());
 
+// Implementamos la "interface CheckPerson" en la propia invocación del método de la clase Person en una clase anónima y así devolviéndole al método printPersons() la nueva implementación de la funcionalidad creada dentro del bloque de código del cuerpo del método de la interface test(Person p)
+//                                                    
+// Con este sistema nos ahorramos crear la clase CheckPersonEligibleForSelectiveService
+//                                                    
+//                                               Clase Anónima
+//                                                    ↓
+//                                                    ↓
+  Person.printPersons(Person.createRoster(), new CheckPerson() {
+   /**
+    * Método de la Interface
+    * Implementada en la misma llamada al método desde una clase anónima
+    */
+   @Override
+   public boolean test(Person p) {
+// Implementación "in situ" del método 'test' con la condición de búsqueda
+    return p.getGender() == Person.Sex.MALE && p.getAge() > 18 && p.getAge() <= 25;
+   }
+  });
 
-// Uso de una Expresión Lambda
+// La misma funcionalidad usando una Expresión Lambda
 // 
 // Clase
 //   ↓  Método de Clase
@@ -251,7 +321,7 @@ public class Main {
   //        ↓           ↓          Clase.Enum.Atributo
   //        ↓           ↓            ↓     ↓   ↓
     (Person p) -> p.getGender() == Person.Sex.MALE 
-  // Condición
+  // Condición de búsqueda
     && p.getAge() >= 18 
     && p.getAge() <= 25);
  }
