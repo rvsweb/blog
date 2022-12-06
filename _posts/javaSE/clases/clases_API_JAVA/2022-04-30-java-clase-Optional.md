@@ -20,7 +20,7 @@ page_css:
 
 ## Definición
 
-* ``Clase concreta y genérica`` permite administrar distintos ``tipos de datos``
+* ``Clase concreta`` que acepta elementos de ``tipos genéricos`` y permite administrar distintos ``tipos de datos``
 
 ```java
 // Definición completa de la clase concreta
@@ -156,7 +156,7 @@ public class Calificaciones {
 }
 ```
 
-* Definimos la ``clase`` donde ejecutaremos el ``código`` y utilizaremos la ``clase Genérica Optional<T>`` para realizar las comprobaciones necesarias para evitar producir el error ``java.lang.NullPointerException``
+* Definimos la ``clase`` donde ejecutaremos el ``código`` y utilizaremos la ``clase Genérica Optional<T>`` para reali zar las comprobaciones necesarias para evitar producir el error ``java.lang.NullPointerException``
 
 ```java
 package com.ej.usando.optional.no.nulls;
