@@ -154,8 +154,38 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-<!-- ![diagramas]() -->
+<!-- {% capture fig_img %}
+![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Photo from Unsplash.</figcaption>
+</figure>
+ -->
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt=""> -->
 
-![Diagrama](/home/radubu20/proyecto/rvs.github.io/assets/images/diagramaUML.jpg)
+<!-- ![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }}) -->
+
+![Diagrama]('/rvs.github.io/assets/images/diagramaUML.jpg')
+
+![Diagrama]('rvs.github.io/assets/images/diagramaUML.jpg')
+
+![Diagrama]({{'rvs.github.io/assets/images/diagramaUML.jpg'}})
+
+![Diagrama]({{'/assets/images/diagramaUML.jpg'}})
+
+![Diagrama]('/assets/images/diagramaUML.jpg')
+
+![Diagrama]('/images/diagramaUML.jpg')
+
+![Diagrama](/rvs.github.io/assets/images/diagramaUML.jpg)
+
+![Diagrama](rvs.github.io/assets/images/diagramaUML.jpg)
+
+![Diagrama](/assets/images/diagramaUML.jpg)
+
+![Diagrama](/assets/images/diagramaUML.jpg)
+
+![Diagrama](/images/diagramaUML.jpg)
