@@ -168,24 +168,10 @@ public class Rectangulo extends Formas {
 
 <!-- ![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }}) -->
 
-![Diagrama]('/rvs.github.io/assets/images/diagramaUML.jpg')
+![Foo](/assets/images/diagramaUML.jpg)
 
-![Diagrama]('rvs.github.io/assets/images/diagramaUML.jpg')
+![UML](/assets/images/diagramaUML.jpg)
 
-![Diagrama]({{'rvs.github.io/assets/images/diagramaUML.jpg'}})
+![diagramaUML](/assets/images/diagramaUML.jpg)
 
-![Diagrama]({{'/assets/images/diagramaUML.jpg'}})
-
-![Diagrama]('/assets/images/diagramaUML.jpg')
-
-![Diagrama]('/images/diagramaUML.jpg')
-
-![Diagrama](/rvs.github.io/assets/images/diagramaUML.jpg)
-
-![Diagrama](rvs.github.io/assets/images/diagramaUML.jpg)
-
-![Diagrama](/assets/images/diagramaUML.jpg)
-
-![Diagrama](/assets/images/diagramaUML.jpg)
-
-![Diagrama](/images/diagramaUML.jpg)
+![diagrama](/assets/images/diagramaUML.jpg)
