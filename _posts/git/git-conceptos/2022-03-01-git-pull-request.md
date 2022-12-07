@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Git - Origin
+title: Pull Request
 date: 2022-02-16
 classes: wide
 toc: true
@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
  
-## Pull Request
+## Concepto
 
 Una **"solicitud de extracción/Pull Request"** es un método para enviar contribuciones a un proyecto en un **Repositorio Remoto**
 

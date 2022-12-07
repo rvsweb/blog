@@ -20,7 +20,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
  
-## Git - Origin
+## Concepto
 
 * Abreviatura y nombre predeterminado por **GITHUB** para indicar el lugar donde enviar el código al **Repositorio Remoto** para almacenarlo
 
