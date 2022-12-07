@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Java - Clase Concreta
-date: 2022-12-06
+date: 2022-12-07
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
