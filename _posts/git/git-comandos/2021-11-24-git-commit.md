@@ -18,21 +18,23 @@ tags:
   - git-working directory
 ---
 
-## Git - commit - (confirmar)
+## Concepto
 
-* Genera un **nuevo commit** con el contenido registrado en el **{Indice/Index}**
+* ``git commit`` → (confirmar)
+
+* Genera un **nuevo commit** con el contenido registrado en el ``{Indice/Index}``
 
 ### Commit
 
-* Instantánea/Captura **(snapshot)** del **estado** o **modificaciones** de los archivos del proyecto que se guardan en el **[Repositorio Local]** a la espera de ser enviados al **Repositorio Remoto** para fusionarse con el resto de archivos del proyecto.
+* ``Instantánea/Captura`` **(snapshot)** del **estado** o **modificaciones** de los archivos del proyecto que se guardan en el ``[Repositorio Local]`` a la espera de ser enviados al **Repositorio Remoto** para fusionarse con el resto de archivos del proyecto.
 
   * Siempre pertenecen a una **(rama/branch)**
   
-  * Los **commit** pueden restaurarse dentro del **[Repositorio Local]** para inspeccionarse o reutilizarse
+  * Los ``commit`` pueden restaurarse dentro del **[Repositorio Local]** para inspeccionarse o reutilizarse
 
 #### Ejemplo
 
-* Guardar un nuevo commit que sera almacenado en el **log del árbol** de **commits** del **Repositorio Remoto** del proyecto y abre un editor para añadirle un mensaje
+* Guardar un nuevo commit que sera almacenado en el **log del árbol** de ``commits`` del **Repositorio Remoto** del proyecto y abre un editor para añadirle un mensaje
 
 ``git commit -m "mensaje"``
 
