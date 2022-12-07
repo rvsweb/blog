@@ -154,36 +154,5 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-![diagramaUML](/home/radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-<!-- https://mmistakes.github.io/minimal-mistakes/assets/images/image-alignment-300x200.jpg -->
-
+<!-- si -->
 ![diagramaUML](/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//images/diagramaUML.jpg)
-
-![diagramaUML](/images/diagramaUML.jpg)
-
-![diagramaUML](images/diagramaUML.jpg)
