@@ -18,8 +18,10 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Anotaciones
+## Concepto
 
 * Símbolos ``@`` que se colocan antes de los elementos que implementan una clase en Java
 
 * Se pueden crear anotaciones propias mediante la creación de una clase que cumpla ciertos requisitos mínimos
+
+<!-- Falta contenido -->

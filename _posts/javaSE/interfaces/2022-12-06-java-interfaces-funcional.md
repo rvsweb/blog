@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Interfaz Funcional
+## Concepto
 
 * Especifica el código de **criterios de búsqueda** con una ``expresión lambda``
 

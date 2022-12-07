@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clases Abstractas
+## Concepto
 
 * Son un tipo de ``clases especiales`` que tienen algunos ``métodos`` implementados porque sabemos que tarea tienen ``que hacer`` y también contienen otros ``métodos que no están`` implementado ``(Todavía no tenemos claro que harán de cara al futuro esos métodos sin implementar)``
 

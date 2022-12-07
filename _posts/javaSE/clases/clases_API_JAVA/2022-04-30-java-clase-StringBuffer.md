@@ -11,15 +11,15 @@ header:
 categories:
   - java
   - java-manual
-tags:
   - java-clase
+tags:
   - java-StringBuffer
   - java-StringBuilder
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## Clase StringBuffer
+## Definición
 
 > • Se recomienda usar StringBuilder porque es una clase más moderna "JDK5" y no sincroniza los hilos de ejecución
 

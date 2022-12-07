@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Interfaces
+## Concepto
 
 > Es un **elemento de tipo abstracto** que te dicen que hacer pero **no como hacerlo**
 

@@ -20,7 +20,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clase - ArrayList
+## Concepto
 
 * Clase implementada por ``interface List``
 

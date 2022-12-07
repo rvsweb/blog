@@ -11,13 +11,14 @@ header:
 categories:
   - java
   - java-manual
-tags:
   - java-clase
+tags:
+  - java-clase-base
 page_css: 
   - /assets/css/mi-css.css
 ---
 
-## Concepto Clase
+## Concepto
 
 * Una **clase** proporciona el **modelo** para los **objetos** , puede **crear** un **objeto** a partir de una **clase**
 
