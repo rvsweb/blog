@@ -11,6 +11,7 @@
 .bundle
 Gemfile.lock
 **/vendor/bundle
+_posts/_Caracteristicas.txt
 
 # Node.js and NPM
 node_modules
