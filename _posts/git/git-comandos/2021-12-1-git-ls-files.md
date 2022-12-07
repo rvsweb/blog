@@ -19,4 +19,4 @@ tags:
 
 ## Git - ls-files
 
-Se utiliza para ver con detalle y para la depuración del estado del **{INDEX}** del **{Staging Area}**
+* Se utiliza para ver con detalle y para la depuración del estado del **{INDEX}** del **{Staging Area}**

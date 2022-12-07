@@ -71,7 +71,7 @@ page_css:
 
 * Gráfico para explicar el funcionamiento de los **commits** a través del **grafo de commits**
 
-![Grafo de commits](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/grafo_commits/grafo_commits.jpg?raw=true "Grafo de Commits")
+![Grafo de commits](/blog/assets/images/grafo_commits/grafo_commits.jpg)
 
 ### Ejemplo de Ancestro ~ de un commit
 
@@ -89,7 +89,7 @@ page_css:
 46g8g8~1=dd12f9  
 ```
 
-![Grafo de commits](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/grafo_commits/ancestro1.jpg?raw=true "Grafo de Commits")
+![Grafo de commits](/blog/assets/images/grafo_commits/ancestro1.jpg)
 
 * Situados en la **rama master** avanzamos una posición hacía atrás en el **historial de commits** del gráfico
 
@@ -98,7 +98,7 @@ page_css:
 master~2=46g8g8 
 ```
 
-![Grafo de commits](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/grafo_commits/ancestro2.jpg?raw=true "Grafo de Commits")
+![Grafo de commits](/blog/assets/images/grafo_commits/ancestro2.jpg)
 
 ### Ejemplo de Padre ^ de un commit
 
@@ -112,7 +112,7 @@ master~2=46g8g8
 master^1=g699g8 
 ```
 
-![Grafo de commits](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/grafo_commits/padre1.jpg?raw=true "Grafo de Commits")
+![Grafo de commits](/blog/assets/images/grafo_commits/padre1.jpg)
 
 * En esta acción haría retroceder **2 commit** hacia atrás en la **rama master**
   
@@ -122,11 +122,11 @@ master^1=g699g8
 master^2=ah78j9
 ```
 
-![Grafo de commits](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/grafo_commits/padre2.jpg?raw=true "Grafo de Commits")
+![Grafo de commits](/blog/assets/images/grafo_commits/padre2.jpg)
 
 ## Gráfico de ejemplo para seguir los conceptos
 
-![Grafico del Ancestros y Padres](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/checkout/grafico-checkout-padre-ancestro.jpg?raw=true "Grafico del Ancestros y Padres")
+![Grafico del Ancestros y Padres](/blog/assets/images/checkout/grafico-checkout-padre-ancestro.jpg)
 
 ```bash
 git checkout <commit>^n

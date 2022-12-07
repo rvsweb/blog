@@ -17,7 +17,7 @@ tags:
 
 ## Git Manual Básico
 
-`git init` : Parametro `init` inicializa el directorio actual para poder trabajar con **Git**
+`git init` : Parámetro `init` inicializa el directorio actual para poder trabajar con **Git**
 
 `git init --help` : Equivale a git help init y muestra toda la ayuda al comando git `init`
 

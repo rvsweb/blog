@@ -31,7 +31,7 @@ Una función que tiene es :
 
   * Estando el archivo en el **[Repo.Local]**  modificamos su contenido
 
-  * Si ejecutamos ``git status``; **Git** nos informará que el contenido original del archivo estando en el **[Repo.Local]** y registrado en el **historial de commit** fue cambiado desde el estado **(Working Directory)** y nos dará la opción de restaurarlo a la versión inicial que teniamos de él en el momento que hicimos ``git add`` y ``git commit`` o podremos añadir los nuevos cambios al archivo ejecutando ``git add`` de nuevo
+  * Si ejecutamos ``git status``; **Git** nos informará que el contenido original del archivo estando en el **[Repo.Local]** y registrado en el **historial de commit** fue cambiado desde el estado **(Working Directory)** y nos dará la opción de restaurarlo a la versión inicial que teníamos de él en el momento que hicimos ``git add`` y ``git commit`` o podremos añadir los nuevos cambios al archivo ejecutando ``git add`` de nuevo
 
 ## Usos del comando
 
@@ -71,7 +71,7 @@ Esto significa que **Git** coge el archivo y lo devuelve al estado **(Working Di
 
 * ``git restore <file>`` → Se usa para deshacer los cambios que se realizaron al archivo el cual después de estar almacenado en el **historial de commits** mediante los comandos ``git add`` y ``git commit`` están a la espera de ser enviado al **|Repo.Remoto|**
 
-  * El archivo en el **[HEAD/último commit]** , modificara su contenido desde el **(Working Directory)** del archivo dejandolo en el estado **{Modified}** del **{Staging Area/Index}** y a la espera de volver a añadir los cambios ejecutando otra vez ejecutando el comando ``git add`` o deshaciendolos mediante este comando
+  * El archivo en el **[HEAD/último commit]** , modificara su contenido desde el **(Working Directory)** del archivo dejándolo en el estado **{Modified}** del **{Staging Area/Index}** y a la espera de volver a añadir los cambios ejecutando otra vez ejecutando el comando ``git add`` o deshaciéndonos mediante este comando
 
 ```git
 On branch main
@@ -94,6 +94,6 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+  (use "git restore --staged <file>..." to Unstage)
         modified:   file.txt
 ```

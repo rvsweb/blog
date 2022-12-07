@@ -85,15 +85,15 @@ page_css:
 
 * Para ello vamos al apartado de la plataforma llamada ``Settings``
 
-![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config1-rsa.jpg?raw=true)
+![Imagen Github](/blog/assets/images/config1-rsa.jpg)
 
 * Seleccionamos la sección ``SSH and GPG Keys``
 
-![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config2-rsa.jpg?raw=true)
+![Imagen Github](/blog/assets/images/config2-rsa.jpg)
 
 * Seleccionamos la sección ``SSH Keys`` y el botón ``New SSH Key``
 
-![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config3-rsa.jpg?raw=true)
+![Imagen Github](/blog/assets/images/config3-rsa.jpg)
 
 * Dentro de la sección ``SSH Keys/Add new``
   * Agregamos un titulo para referenciarlo en la sección ``Title``
@@ -101,7 +101,7 @@ page_css:
     ``ssh-keygen -t rsa -C correo@host.dominio``
   * Al terminar pulsamos el botón ``Add SSH Key``
 
-![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config4-rsa.jpg?raw=true)
+![Imagen Github](/blog/assets/images/config4-rsa.jpg)
 
 5. Comprobar que la conexión se ha establecido entre tu sistema **UNIX/Linux** y la plataforma **GITHUB** ejecutamos el siguiente comando
 
@@ -124,7 +124,7 @@ provide shell access.
 
 6. Ahora nos dirigimos a la plataforma y elegimos el **Repositorio Remoto** que queremos clonar en nuestro **[Repo.Local]** y así poder continuar trabajando
 
-![Imagen Github](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/config5-rsa.jpg?raw=true)
+![Imagen Github](/blog/assets/images/config5-rsa.jpg)
 
 7. Desde la terminal de **UNIX/Linux** ejecutamos el comando ``git clone`` pero añadiendo la URL del tipo **ssh**
 
@@ -133,4 +133,3 @@ git clone git@github.com:Rad-101/mi-git-para-pruebas.git
 ```
 
 Si todo va bien , tu **[Repo.Local]** estará sincronizado con tu **Repositorio Remoto** desde la plataforma **GITHUB**
-

@@ -31,7 +31,7 @@ page_css:
     * Salida estándar **(Pantalla de la terminal)**
     * Salida estándar de errores **(Pantalla de la terminal)**
 
-![Argumento](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/linux/argumentos/argumentos_comando_shell.jpg?raw=true "Ejemplo de comandos")
+![Argumento](/blog/assets/images/linux/argumentos/argumentos_comando_shell.jpg)
 
 * **Cadena de caracteres** que indican a la **shell** de **UNIX/Linux** la ejecución de una **acción específica**
 

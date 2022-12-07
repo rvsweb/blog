@@ -20,9 +20,9 @@ page_css:
 
 ## Git Repositorio Remote
 
-Version(es) del proyecto que están alojados en el sistema de gestor de repositorio **GITHUB** o una red privada , asegurando que todos los cambios están disponibles para otros desarrolladores.
+* Version(es) del proyecto que están alojados en el sistema de gestor de repositorio **GITHUB** o una red privada , asegurando que todos los cambios están disponibles para otros desarrolladores.
 
-Por defecto es **"origin"** el cual es un resumen de la URL completa donde está ubicado el repositorio central del proyecto de la aplicación con la que se está trabajando.
+* Por defecto es **"origin"** el cual es un resumen de la URL completa donde está ubicado el repositorio central del proyecto de la aplicación con la que se está trabajando.
 
 Ejemplo
 
