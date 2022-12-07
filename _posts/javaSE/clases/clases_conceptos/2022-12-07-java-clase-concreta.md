@@ -158,8 +158,8 @@ public class Rectangulo extends Formas {
 
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt=""> -->
 
-<img src="//rvs.github.io/assets/images/uml/diagramaUML.jpg" alt="Diagrama">
+<img src="/rvs.github.io/assets/images/uml/diagramaUML.jpg" alt="Diagrama">
 
 Otro sistema
 
-![Diagrama](//rvs.github.io/assets/images/uml/diagramaUML.jpg)
+![Diagrama](/rvs.github.io/assets/images/uml/diagramaUML.jpg)
