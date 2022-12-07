@@ -154,20 +154,6 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-<!-- {% capture fig_img %}
-![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
-</figure>
- -->
-
-<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt=""> -->
-
-<!-- ![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }}) -->
-
 ![diagramaUML](/home/radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
 
 <!-- https://mmistakes.github.io/minimal-mistakes/assets/images/image-alignment-300x200.jpg -->
