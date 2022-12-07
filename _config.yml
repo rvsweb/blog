@@ -29,8 +29,8 @@ name                     : "RVS"
 # description              : &description "Blog sobre Programación e Informática"
 description              : "Blog Sobre Programación e Informática"
 url                      : "https://rvsweb.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "rvsweb/rvs.github.io"
+baseurl                  :  "/blog" # the subpath of your site, e.g. "/blog"
+repository               : "rvsweb/blog"
 # teaser                 : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # logo                   : "assets/images/a.jpg"
 logo                     : "assets/images/yin-80x80.jpg"
@@ -112,7 +112,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "RVSWeb"
+  name             : "RVS Web"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Desarrollador Junior Full-Stack"
   home             : # null (default)
@@ -164,7 +164,6 @@ footer:
 include:
   - .htaccess
   - _pages
-  - assets/images
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -216,6 +215,11 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 # Collections
 collections:
   docs:
@@ -230,7 +234,6 @@ collections:
 
 # Defaults
 defaults:
-
   # _posts
   - scope:
       path: ""
@@ -268,11 +271,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
 permalink: /:categories/:title/
