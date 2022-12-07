@@ -154,8 +154,4 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-![diagramaUML](/blog/_posts/javaSE/clases/clases_conceptos/2022-12-07-java-clase-concreta.md)
-
-### Diagrama UML 2
-
-![diagramaUML](/blog/assets/images/diagramaUML.jpg)
+![diagramaUML](/blog/assets/images/uml/diagramaUML.jpg)
