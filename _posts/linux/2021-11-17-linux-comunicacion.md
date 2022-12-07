@@ -90,7 +90,7 @@ sftp user@remotehost_domainname
   * **{host}** → Nombre del equipo o sistema remoto al que quieres conectarte
     * Ejemplo :  www.midominio.com
 
-![Alt diagrama-ssh](/assets/images/linux/ssh/ssh-eje-1.jpg)
+![Alt diagrama-ssh](/blog/assets/images/linux/ssh/ssh-eje-1.jpg)
 
 ##### Conectar al host como usuario
 

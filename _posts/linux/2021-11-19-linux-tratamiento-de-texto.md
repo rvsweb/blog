@@ -202,7 +202,7 @@ sort -rn abecedario-hexa.txt
 sort abecedario.txt
 ```
 
-#### Ejemplo
+#### Ejemplo sed
 
 ```bash
 cat fichero.txt
@@ -292,7 +292,7 @@ tr "set1" "set2" < file-to-translate
 tr "set1" "set2" < file-to-translate > file-output
 ```
 
-#### Ejemplo
+#### Ejemplo tr
 
 * Convertir minúsculas a mayúsculas
 

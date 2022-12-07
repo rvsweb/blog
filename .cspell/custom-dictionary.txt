@@ -14,7 +14,10 @@ instanciar
 javax
 jekyll
 JPQL
+Listin
 markdownify
+multihilos
+pasarle
 POJOS
 preespecificadas
 println

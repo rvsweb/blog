@@ -57,7 +57,7 @@ page_css:
 
 * Ahora le asignaremos una **copia física** del **objeto** con el que estamos trabajando y le **asignaremos** la **variable** anteriormente **declarada** que define el **tipo de dato/objeto** que sera
 
-  * Esto realiza utilizando el operador ``new`` el cual **instancia** una **clase** asignando dinanicamente ``(en tiempo de ejecución)`` memoria para un **nuevo objeto** y devolviendo una **referencia** a esa **memoria**
+  * Esto realiza utilizando el operador ``new`` el cual **instancia** una **clase** asignando dinámicamente ``(en tiempo de ejecución)`` memoria para un **nuevo objeto** y devolviendo una **referencia** a esa **memoria**
 
     * Esta **referencia** se almacenará en la variable del **tipo de dato** anteriormente declarada
 

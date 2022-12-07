@@ -44,4 +44,5 @@ page_css:
 * Ejemplo
 
   ``git bare --init``
+
   ``git init --bare``
