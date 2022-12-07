@@ -154,4 +154,4 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-![diagramas](/home/radubu20/proyecto/rvs.github.io/assets/images/uml/diagramaUML.png)
+![diagramas](/assets/images/uml/diagramaUML.jpg)
