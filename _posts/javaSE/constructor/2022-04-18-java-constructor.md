@@ -17,7 +17,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Java - Constructor
+## Concepto
 
 * Es un **método especial** que se utiliza para inicializar los **atributos/elementos** de un objeto y asi definir su ``estado`` o ``"elementos internos"``
 

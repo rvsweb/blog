@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - HashSet
+title: Java - Clase HashSet
 date: 2022-04-14
 classes: wide
 toc: true
@@ -19,7 +19,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clase - HashSet
+## Concepto
+
+* Clase HashSet
 
 * Clase implementada por ``interface Set`` que esta respaldada por una ``tabla hash`` que en realidad es una instancia de ``HashMap``
 

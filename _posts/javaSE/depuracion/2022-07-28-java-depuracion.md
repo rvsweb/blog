@@ -20,7 +20,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Depuración con Eclipse
+## Uso
 
 * Botón : ``Debug <nombre de la clase>`` ![depuracion](/rvs.github.io/assets/images/depuracion_imagenes/Depuracion_Debug_Basico.png)
 

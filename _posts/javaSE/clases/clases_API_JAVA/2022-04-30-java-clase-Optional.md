@@ -11,8 +11,8 @@ header:
 categories:
   - java
   - java-manual
-tags:
   - java-clase
+tags:
   - java-Optional
 page_css: 
   - /assets/css/mi-css.css
@@ -122,9 +122,8 @@ public class Calificaciones {
  }
 
  /**
-  * Metodo de instancia
   * 
-  * @return - String -
+  * @return  
   */
  public String getAsignatura() {
   return asignatura;
