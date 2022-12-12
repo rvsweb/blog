@@ -26,13 +26,13 @@ page_css:
 
 * Son como ``clases locales`` excepto que ``no tienen nombre``
 
-> Se utiliza para usar una ``clase local`` una sola vez
+> Se utiliza para crear y usar una ``clase local`` una sola vez
 
 ## Ventajas
 
-* Son ``clases`` se usan sobre todo como ``escuchadores-listeners``, ``callbacks`` o ``eventos`
+* Son ``clases`` se usan sobre todo como ``escuchadores-Listeners``, ``Callbacks`` o ``Eventos``
 
-* Pueden acceder ``variables locales`` que se encuentren a su alcance
+* Pueden acceder a ``variables locales`` que se encuentren a su entorno
 
 ## Declaración
 
@@ -44,9 +44,9 @@ page_css:
 
 > Recuerda : ``Clase anónima`` → ``expresión``
 
-* Sintaxis de una expresión de ``clase anónima``
+* ``Sintaxis`` de una ``expresión`` de ``clase anónima``
 
-  * Es como la invocación de un ``constructor`` excepto que hay una ``definición`` de ``clase contenida`` en un bloque de código
+  * Es como la invocación de un ``constructor`` excepto que hay una ``definición`` de ``clase contenida`` en un ``bloque de código``
 
 * Considere la ``instanciación`` del objeto ``frenchGreeting``
 
@@ -75,7 +75,7 @@ HelloWorld frenchGreeting = new HelloWorld() {
 
   1. El ``nuevo operador``
 
-  2. El nombre de una ``interfaz`` para implementar o una ``clase`` para extender
+  2. El nombre de una ``interfaz`` para implementar o una ``clase`` para ``extender``
 
 * Ejemplo
 
