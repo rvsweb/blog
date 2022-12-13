@@ -164,7 +164,8 @@ public class Bird implements Animal, Flyable {
 
 ### En Resumen
 
-> Interface <br>
+> Interface
+>
 > Se utiliza como previsión de lo que podremos hacer de cara al futuro en nuestra aplicación mediante las clases que hereden de las **Interfaces** que creamos o invoquemos dentro de ella
 
 ### Recuerda
