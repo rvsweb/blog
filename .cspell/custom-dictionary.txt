@@ -25,3 +25,4 @@ rgba
 rvsweb
 serializar
 servlet
+spanish

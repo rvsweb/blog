@@ -121,6 +121,8 @@ public class Circulo extends Formas {
 }
 ```
 
+<!-- Puedes explicarme con ejemplos de código cómo se utiliza el polimorfismo en Java , por favor -->
+
 * Clase Rectángulo
 
 ```java

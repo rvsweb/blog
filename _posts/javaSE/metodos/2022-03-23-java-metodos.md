@@ -17,25 +17,29 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Definición de Métodos - Funciones - Procedimientos
+## Definición
 
-* Es una **guía detallada** , **secuencial** y **ordenadamente** de **instrucciones** dentro de un **bloque de código** que le indica al ordenador como realizar una **determinada acción** dentro del programa que estemos ejecutando en ese momento
+* Es una ``guía detallada`` , ``secuencial`` y ``ordenadamente`` de ``instrucciones`` dentro de un **bloque de código** que le indica al programa que estamos desarrollando ``como realizar`` una ``determinada acción/tarea`` dentro del programa que estemos ejecutando en ese momento
 
-* Este mecanismo lo poseen ciertos **lenguajes de programación** que permiten agrupar este **conjunto de instrucciones** para realizar una **determinada tarea** la cual podemos llamarla tantas veces a través de una **clase** o un **objeto** como necesitemos dentro de nuestro programa
+* Mecanismo que permiten ``agrupar`` este ``conjunto de instrucciones`` para realizar una ``determinada tarea``
 
-### 3 Tipos de Instrucciones Básicas
+* Podemos llamarla a través de una **clase** o un **objeto** dentro de nuestro programa
 
-#### Métodos
+## Tipos de Instrucciones Básicas
 
-* Instrucción que pertenece a un **objeto** de la **clase especifica**
+### Métodos
+
+* ``Instrucción/Tarea`` que pertenece a un **objeto** de la **clase especifica**
   
-* Puede **recibir o no** una serie de parámetros **"aunque lo normal sería que no los llevase declarados"** dentro de la sintaxis de la declaración del método
+* Puede ``recibir o no`` una serie de parámetros **"aunque lo normal sería que no los llevase declarados"** dentro de la sintaxis de la declaración del método
 
-* Devuelve un determinado valor al final de la ejecución del mismo que puede ser incorporado a otro **método** o almacenado dentro de una **variable** , un **objeto** o un **método** de su mismo tipo y que tenga el mismo tipo de valor al devuelto por el método que lo invoca
+* ``Devuelve`` un valor al final de la ejecución del mismo que puede ser incorporado a otro **método** igual o distinto o almacenarlo dentro de una ``variable`` , un ``objeto`` o un ``método`` del mismo tipo y que ``tenga`` el mismo ``tipo de valor`` al devuelto por el ``método`` que lo invoca
 
-* Esta instrucción se suele usar para **devolver valores** de todo tipo , por eso se le suele poner el prefijo ``get`` y el nombre que defina su función dentro del **método**
+* Esta ``instrucción`` se suele ``usar`` para ``devolver valores`` de todo tipo
 
-* Puede tener más de una copia de este método en toda la clase principal
+  * Por eso se le suele poner el prefijo ``get`` y el nombre que defina su función dentro del **método**
+
+* Puede tener más de una ``copia`` de este ``método`` en toda la ``clase principal``
 
 ```java
 /**
@@ -52,19 +56,21 @@ Sumar suma = new Sumar();
 suma.getSuma();
 ```
 
-#### Procedimientos
+### Procedimientos
 
-* Instrucción que pertenece a un **objeto** de una **clase especifica**
+* ``Instrucción`` que pertenece a un **objeto** de una **clase especifica**
 
-* Puede recibir **parámetros o no**
+  * Puede recibir **parámetros o no**
 
-* Ejecuta una **acción especifica** pero **no devuelve ningún tipo de valor**
+* ``Ejecuta`` una **acción especifica** pero **no devuelve ningún tipo de valor**
 
-* Va acompañado del modificador ``void``
+  * Va acompañado del modificador ``void``
 
-* Se suele usar para **establecer** los valores de los **atributos** de la **clase** en la que nos encontramos entre otras opciones con el objetivo de realizar ciertas tareas , por eso se le coloca el prefijo de ``set`` dentro de la sintaxis de la declaración del procedimiento y el nombre que defina su función principal dentro de la clase
+* Se suele ``usar`` para **establecer** los valores de los **atributos** de la **clase** en la que nos encontramos entre otras opciones con el objetivo de realizar ciertas tareas
 
-* Puede tener más de una copia de este procedimiento en toda la clase principal mediante la creación de objetos de la clase que lo albergue
+  * Se le coloca el prefijo de ``set`` dentro de la sintaxis de la declaración del ``procedimiento`` y el ``nombre`` que defina su función principal dentro de la clase
+
+* Puede tener más de una ``copia de este procedimiento`` en toda la clase principal mediante la creación de objetos de la clase que lo albergue
 
 ```java
 /**
@@ -82,15 +88,27 @@ Sumar suma = new Sumar();
 suma.setSuma(5,5);
 ```
 
-#### Funciones
+### Funciones
 
-* Instrucción que pertenece a una clase estática ``static`` y no se puede ``instanciar = crear un objeto``  desde la propia clase en la que se encuentra
+> Concepto de static : <br>
+> Un solo objeto por clase ; en este caso la propia clase se encarga de invocarlo <br>
+> Math.pow(1,2)
+
+* ``Instrucción`` que pertenece a una **clase estática** ``static`` y **no se puede** ``instanciar = crear un objeto``  desde la propia clase en la que se encuentra
 
 * Tiene asignado el modificador llamado ``static`` dentro de sus sintaxis para identificarse como **método** de **clase estática**
 
-* Solo se tiene una copia de esta función en toda la clase principal y su invocación es a través de la clase que lo alberga
+* ``Solo`` se tiene ``una copia`` de esta ``función`` en toda la ``clase principal`` y su ``invocación`` es a través de la ``clase`` que lo alberga
+
+#### Ejemplo de Función
 
 ```java
+
+/**
+* Clase Concreta
+*/
+public class Matematicas{
+
 /**
 * Declaración 
 *
@@ -101,9 +119,15 @@ public static void SetSuma(int a , int b){
   int b = b;
 }
 
+public static void main(String [] args){
 // Instanciación de la función mediante la clase estática que lo alberga
+
 // Como se puede ver , necesita de una variable para almacenar el valor generado
 int suma = Sumar().setSuma(5,5);
+
 // Otra forma sería pero el valor no se quedará almacenado en ninguna variable u objeto
 new Sumar().setSuma(5,5);
+  }
+}
+
 ```

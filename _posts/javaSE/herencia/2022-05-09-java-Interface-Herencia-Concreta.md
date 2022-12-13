@@ -19,7 +19,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Sistema en Cascada de Implementación y Herencia
+## Concepto
 
 * La implementación mediante la **Interface** y la **Herencia** se realiza como si fuera una cascada de elementos descendentes
 

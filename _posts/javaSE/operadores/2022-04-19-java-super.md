@@ -235,7 +235,8 @@ public class Hijos extends Padre {
   */
  public Hijos(String colorPelo, String colorOjos, double estatura, boolean estudiante, int edad, String nombre,
    String apellidos, double peso) {
-  super(edad, nombre, apellidos, peso); // Invoca al constructor de la clase PADRE para implementar con sus
+  super(edad, nombre, apellidos, peso); // Invoca al constructor de la 
+            // clase PADRE para implementar con sus
             // atributos los objetos de la clase descendiente llamada 'Clase Hija'
             // Cada objeto que vayamos a crear tendran tantos atributos y metodos de
             // la propia clase como de la clase superior llamada Clase Padre para
@@ -662,7 +663,7 @@ class Hijo extends Padre {
  /**
   * Procedimiento de instancia
   * 
-  * @param peso - Establece el valor del peso que tendra el objeto instanciado
+  * @param peso - Establece el valor del peso que tendrá el objeto instanciado
   */
  public void setPeso(double peso) {
   this.peso = peso;
@@ -671,12 +672,15 @@ class Hijo extends Padre {
  /**
   * Metodo de instancia
   * 
-  * Creamos un método que invoque explícitamente el atributo de la clase Padre llamado 'edad' mediante la palabra super para así asignarle un valor con el que establecer un nuevo calculo 
+  * Creamos un método que invoque explícitamente el atributo 
+  * de la clase Padre llamado 'edad' mediante la palabra super 
+  * para así asignarle un valor con el que establecer un nuevo calculo 
   * 
   * @return peso * edad
   */
  public double getPesoPorEdad(){
-  // En este caso invocamos el atributo de la Clase Padre para hacer un calculo con otro atributo propio de la Subclase Hijo
+  // En este caso invocamos el atributo de la Clase Padre para hacer
+  // un calculo con otro atributo propio de la Subclase Hijo
   super.edad = 14; // Invocación del directa del atributo edad de la clase Padre
   return peso * edad;
  }
@@ -712,11 +716,13 @@ public class SuperComoAtributos {
   Hijo hijoSinParametros = new Hijo();
 // Mostramos los valores del objeto de la Clase Hijo utilizando el metodo toString() de la SuperClase Object
   System.out.println(hijoSinParametros.toString());
-// Definimos un objeto de la Subclase Hijo el cual internamente tiene definido el atributo "nombre" el cual asigna un valor al objeto de forma automática
+// Definimos un objeto de la Subclase Hijo el cual internamente tiene definido 
+// el atributo "nombre" el cual asigna un valor al objeto de forma automática
   Hijo hijoSegundoConstructorParametrizado = new Hijo(154, 45);
 // Mostramos los valores del objeto de la Clase Hijo utilizando el metodo toString() de la SuperClase Object
   System.out.println(hijoSegundoConstructorParametrizado.toString());
-// Definimos un objeto de la Subclase Hijo el cual internamente tiene definido el atributo "nombre" mediante la llamada al metodo de la Clase Padre 
+// Definimos un objeto de la Subclase Hijo el cual internamente tiene definido 
+// el atributo "nombre" mediante la llamada al metodo de la Clase Padre 
 // el cual asigna un valor de forma automática al objeto 
   Hijo hijoTercerConstructorParametrizado = new Hijo(145, 39, "Felipe");
 // Mostramos los valores del objeto de la Clase Hijo utilizando el metodo toString() de la SuperClase Object
