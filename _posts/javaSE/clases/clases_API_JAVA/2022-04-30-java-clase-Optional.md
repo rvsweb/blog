@@ -13,7 +13,7 @@ categories:
   - java-manual
   - java-clase
 tags:
-  - java-Optional
+  - java-Optional<T>
 page_css: 
   - /assets/css/mi-css.css
 ---

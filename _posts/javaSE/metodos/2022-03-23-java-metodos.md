@@ -90,20 +90,25 @@ suma.setSuma(5,5);
 
 ### Funciones
 
-> Concepto de static : <br>
-> Un solo objeto por clase ; en este caso la propia clase se encarga de invocarlo <br>
+> Concepto de static :
+>
+> Un solo objeto por clase ; en este caso la propia clase se encarga de invocarlo
+>
 > Math.pow(1,2)
 
-* ``Instrucción`` que pertenece a una **clase estática** ``static`` y **no se puede** ``instanciar = crear un objeto``  desde la propia clase en la que se encuentra
+* ``Instrucción``
 
-* Tiene asignado el modificador llamado ``static`` dentro de sus sintaxis para identificarse como **método** de **clase estática**
+  * Pertenece a una **clase estática** ``static`` y **no se puede**
+  
+  * ``instanciar = crear un objeto``  desde la ``propia clase`` en la que se encuentra
+
+* Tiene asignado el ``modificador`` llamado ``static`` dentro de sus sintaxis para identificarse como **método** de **clase estática**
 
 * ``Solo`` se tiene ``una copia`` de esta ``función`` en toda la ``clase principal`` y su ``invocación`` es a través de la ``clase`` que lo alberga
 
 #### Ejemplo de Función
 
 ```java
-
 /**
 * Clase Concreta
 */
@@ -129,5 +134,4 @@ int suma = Sumar().setSuma(5,5);
 new Sumar().setSuma(5,5);
   }
 }
-
 ```
