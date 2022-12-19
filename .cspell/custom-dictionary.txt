@@ -6,6 +6,7 @@ endunless
 github
 Gson
 inicialización
+instanciación
 instanciada
 instanciado
 instanciados
@@ -21,6 +22,7 @@ pasarle
 POJOS
 preespecificadas
 println
+reutilizable
 rgba
 rvsweb
 serializar
