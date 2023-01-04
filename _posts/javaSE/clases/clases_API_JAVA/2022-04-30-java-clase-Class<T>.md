@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Class<T>
+title: Java - Class <T>
 date: 2022-12-14
 classes: wide
 toc: true

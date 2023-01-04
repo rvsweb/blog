@@ -20,11 +20,29 @@ page_css:
 
 ## Concepto
 
-* Una **clase** proporciona el **modelo** para los **objetos** , puede **crear** un **objeto** a partir de una **clase**
+* Una **clase** proporciona el **modelo** para la creación de **objetos***
 
-> Declarar una **Clase** permite crear ``un nuevo tipo de dato``
+* Las clases están compuestas por
 
-* Se entiende como un **archivo** del tipo ``.java`` cuyo interior tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
+  * Atributos
+
+    * Variable de instancias
+
+    * Variable de clase
+
+    * Constantes
+
+  * Métodos
+
+    * De instancia
+
+    * De clase
+
+> Declarar una **clase** permite crear ``un nuevo tipo de dato``
+
+* Se entiende como un **archivo** del tipo ``.java``
+  
+* Su interior tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
 
 * Una clase proporciona un **modelo** para los objetos que vayamos a construir
 
@@ -60,5 +78,24 @@ public Persona(){
   this.edad = 0;
   this.altura = 0.0;
   }
+}
+```
+
+### Modificador final
+
+* Una clase con el modificador ``final`` no permite la creación de objetos
+
+```java
+// Modificador "final" establece claramente la intención
+public final class MiClass { 
+//Constructor private por defecto  ==> No puede ser instanciado
+//La clase es final porque no se puede subclasificar o extender 
+//super() → No puede ser llamado desde la subclase
+    private MiClass() {
+        throw new AssertionError()
+    }
+
+    //...
+    public static void ejecutarAccion() {}
 }
 ```
