@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Expresiones Lambda
+title: Java - Expresiones
 date: 2022-12-06
 classes: wide
 toc: true
@@ -13,7 +13,7 @@ categories:
   - java-manual
 tags:
   - java-clase
-  - java-expresiones-lambda
+  - java-expresiones
 page_css: 
   - /assets/css/mi-css.css
 ---
