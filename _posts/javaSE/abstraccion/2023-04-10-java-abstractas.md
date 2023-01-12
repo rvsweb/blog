@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Java - Clase Abstracta
-date: 2022-04-10
+date: 2023-04-10
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
