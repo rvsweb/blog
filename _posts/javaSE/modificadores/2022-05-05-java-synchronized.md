@@ -18,7 +18,10 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - synchronized
+<!-- TODO -->
+
+## Concepto
 
 * Los elementos sincronizados sólo podrán ser accedidos por un hilo a la vez , se suele utilizar en la programación concurrente
+
   * Se suele aplicar en bloques de código o en métodos
