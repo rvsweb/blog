@@ -18,14 +18,18 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - default
+## Concepto
 
 * Elementos que se ponen delante de la declaración de un elemento
+
   * **Clases** , **Objetos** , **Métodos** , **Atributos**
 
 * Modificador ``default``
+
   * ``Modificador por defecto`` , no tiene un modificador asignado delante del la ``clase`` , ``atributo`` o ``método``
+  
     * Una ``clase sin modificador`` sera accesible solo por las otras ``clases`` del ``paquete/package``
+
     * Un ``atributo`` sin modificador sera accesible solo desde el mismo ``paquete/package`` , a diferencia de un ``atributo protected`` el cual no tendrá visibilidad en las ``clases hijas`` salvo que estén en el mismo ``paquete/package``
 
 ### Ejemplo de Código
@@ -63,7 +67,7 @@ class ModificadorDefault {
  }
 
  /**
-  * Constructor por parametros
+  * Constructor por parámetros
   * 
   * Visibles dentro del mismo paquete pero no son accesibles desde otros paquetes
   * 
