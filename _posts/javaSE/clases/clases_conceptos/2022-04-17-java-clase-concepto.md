@@ -20,6 +20,8 @@ page_css:
 
 ## Concepto
 
+> 'Clase' en realidad se refieren a un 'tipo de referencia'
+
 * Una **clase** proporciona el **modelo** para la creación de **objetos***
 
 * Las clases están compuestas por

@@ -12,8 +12,8 @@ categories:
   - java
   - java-manual
 tags:
-  - java-clase
   - java-interface
+  - java-abstracción
 page_css: 
   - /assets/css/mi-css.css
 ---
@@ -22,13 +22,17 @@ page_css:
 
 * ``Interfaz`` es una ``clase abstracta pura``
 
-  * Todos los ``métodos`` son ``implícitamente abstractos``
-  
-    * No es necesario especificar la palabra clave ``"abstract"``
+  * Todos los ``métodos`` que contienen son ``implícitamente abstractos``
 
-    ```java
-    void myMethod();
-    ```
+    * Son **prototipos** de ``métodos``
+  
+    * Sólo contienen la firma/signatura del ``método``
+
+    * El contenido del método se lo añade las clases concretas o abstractas que la implementen o extiendan la interface
+
+```java
+   void myMethod();
+```
 
 ## Estructura
 
@@ -39,8 +43,8 @@ page_css:
   * Ejemplo : **IControlador** , **IConnector** , **IBase** , **IRemote** , **IDataBaseLocal** , **IRoot**
 
 ```java
-public interface <NombreInterface> { 
-  ... 
+  public interface <NombreInterface> { 
+    // Código de la interface ...  
   } 
 ```
 
@@ -53,7 +57,7 @@ public interface <NombreInterface> {
     * Ejemplo
 
       ```java
-      public static final int PI = 3.14159265358979323846;  
+         public static final int PI = 3.14159265358979323846;  
       ```
 
 ## Métodos
@@ -67,7 +71,7 @@ public interface <NombreInterface> {
     * Ejemplo
 
         ```java
-        public int getCalcularPI(int x , int y );
+          public int getCalcularPI(int x , int y );
         ```
 
 > **Son elementos del tipo abstracto**
@@ -215,21 +219,23 @@ public class Bird implements Animal, Flyable
 
 ```java
 public interface Animal {
-  public void makeSound();
+  
+    public void makeSound();
 }
 
 public interface Flyable {
-  public void fly();
+  
+    public void fly();
 }
 
 public class Bird implements Animal, Flyable {
 
-  public void makeSound() {
-    // Implementación código para hacer un sonido de pájaro
+    public void makeSound() {
+      // Implementación código para hacer un sonido de pájaro
   }
-  
-  public void fly() {
-    // Implementación código para volar
+
+   public void fly() {
+      // Implementación código para volar
   }
 }
 ```
@@ -242,7 +248,17 @@ public class Bird implements Animal, Flyable {
   
   * Esto le permite tener los ``métodos declarados`` en ambas ``interfaces`` y comportarse como un ``animal`` que puede volar
 
-* La ``herencia múltiple`` en Java se logra mediante la ``implementación`` de ``múltiples interfaces`` dentro de una ``clase concreta`` lo que le permite tener las ``propiedades`` y ``métodos`` de cada ``interfaz`` y poderlos definir a sus necesidades o lógica de negocio
+* La ``herencia múltiple`` en **Java** se logra mediante la ``implementación`` de ``múltiples interfaces`` dentro de una ``clase concreta`` lo que le permite tener las ``propiedades`` y ``métodos`` de cada ``interfaz`` y poderlos definir a sus necesidades o lógica de negocio
+
+## Consejo
+
+* La esencia de las ``interfaces`` en la **POO** es diseñar sus nombres para que sus ``interfaces`` que terminen en ``-able`` para identificarlas mejor
+
+* Ejemplo
+
+  * Interface [``Serializable``](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html)
+  
+  * Interface [``Comparable<T>``](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html)
 
 ## Resumen
 
