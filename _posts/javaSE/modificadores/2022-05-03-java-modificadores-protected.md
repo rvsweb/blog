@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - protected
+## Concepto
 
 * Modificador ``protected``
   * Se aplica a :

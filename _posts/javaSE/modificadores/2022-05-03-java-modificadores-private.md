@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - private
+## Concepto
 
 * Elementos que se ponen delante de la declaración de un elemento
   * **Clases** , **Objetos** , **Métodos** , **Atributos**
