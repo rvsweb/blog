@@ -33,43 +33,24 @@ page_css:
   
     * Si una ``variable final`` contiene una ``referencia`` a una ``matriz`` los componentes de la ``matriz`` pueden cambiarse mediante operaciones en la ``matriz`` pero la variable siempre se referirá a la misma ``matriz``
 
-## Usos
+## Usos de Final
 
-* ``Clases``
+### Atributos Finales
 
-  * Evitando que estas puedan ser heredadas
-  
-    * ``extends``
+* Las **variables finales** (``atributos`` y (``parámetros``) sólo pueden ser inicializadas una vez
 
-* ``Métodos``
+  * Si la **variable final** es una ``referencia`` a un **objeto** esta **variable no se podrá referenciar** con otro ``objeto``
 
-  * Evitando que estos puedan ser sobrescritos
+* Se pueden cambiar los **datos** dentro del ``objeto`` pero **no podemos** hacer que ``apunte`` a ``otro objeto``
 
-    * ``@Override``
+```java
+public void restar(final int a , final int b){
+//  Produce un error en tiempo de ejecución
+  a -= b; 
+}
+```
 
-* ``Atributos o Variables``
-
-  * Para crear ``CONSTANTES``
-
-    * ``public static final double PI = 3.14159265358979323849``
-
-## Métodos finales
-
-* Una ``clase final`` no puede crear ``subclases`` o clases ``hijas``
-
-  * Se utiliza para obtener seguridad y eficiencia
-  
-    * Algunas clases de la biblioteca estándar de Java son ``finales``
-
-      * ``java.lang.System`` y ``java.lang.String``
-
-* Las ``subclases`` **no pueden anular ni ocultar** un ``método final``
-
-  * Se utiliza para evitar comportamiento inesperado de una ``subclase`` que altera un ``método`` crucial para la ``función`` o la consistencia de una ``clase``
-
-* Error declarar un método ``final`` para mejorar la eficiencia al permitir que el compilador inserte directamente el método cuando se invoque
-
-## Final variables
+## Variables Final
 
 * Solo se puede ``inicializar`` una vez a través
 
@@ -83,7 +64,7 @@ page_css:
 
 * ``Variable de instancia`` ``'final en blanco'``
 
-  * De una clase debe asignarse en cada ``constructor`` de la ``clase`` en la que se declara
+  * De una ``clase`` debe asignarse en cada ``constructor`` de la ``clase`` en la que se declara
 
 * Una ``variable estática`` ``'final en blanco'``
 
@@ -131,7 +112,46 @@ Sphere(double x, double y, double z, double r) {
 
 * Entonces ``pos`` no se puede asignado pero las tres propiedades sí a menos que sean ``finales`` en sí mismas
 
-## Final : Bucle For
+### Clases Final
+
+* Evitando que estas puedan ser heredadas
+  
+  * ``extends``
+
+* No se pueden ``extender`` a otras ``clases hijas``
+  * No permiten ``crear subclases`` a partir de una ``clase final``
+
+* ``Métodos``
+
+  * Evitando que estos puedan ser sobrescritos
+
+    * ``@Override``
+
+* ``Atributos o Variables``
+
+  * Para crear ``CONSTANTES``
+
+    * ``public static final double PI = 3.14159265358979323849``
+
+### Métodos Final
+
+* No pueden ser ``@Override`` por ninguna de sus subclases
+
+* Una ``clase final`` no puede crear ``subclases`` o clases ``hijas``
+
+  * Se utiliza para obtener seguridad y eficiencia
+  
+    * Algunas clases de la biblioteca estándar de Java son ``finales``
+
+      * ``java.lang.System`` y ``java.lang.String``
+
+* Las ``subclases`` **no pueden anular ni ocultar** un ``método final``
+
+  * Se utiliza para evitar comportamiento inesperado de una ``subclase`` que altera un ``método`` crucial para la ``función`` o la consistencia de una ``clase``
+
+* Error declarar un método ``final`` para mejorar la eficiencia al permitir que el compilador inserte directamente el método cuando se invoque
+
+## Bucle For : Final
 
 * la siguiente es una declaración legal
 
@@ -199,7 +219,7 @@ assert coordinateSystem.getOrigin().getX() == 0;
 
 * Esto descalifica ``java.util.Date`` y ``java.awt.Point`` varias ``otras clases`` para que no se utilicen ``objetos inmutables``
 
-## Final y Clases Internas
+## Clases Internas y Final
 
 * Cuando se define una ``clase interna anónima`` dentro del ``cuerpo`` de un ``método`` todas las ``variables declaradas finales`` en el alcance de ese ``método`` son accesibles desde dentro de la ``clase internas``
 

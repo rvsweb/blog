@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Modificadores
+title: Java - Modificador Private
 date: 2022-05-03
 classes: wide
 toc: true
