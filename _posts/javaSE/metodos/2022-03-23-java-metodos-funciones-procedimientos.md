@@ -12,7 +12,7 @@ categories:
   - java
   - java-manual
 tags:
-  - java-metodos
+  - java-métodos
 page_css: 
   - /assets/css/mi-css.css
 ---
