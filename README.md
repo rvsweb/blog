@@ -1,5 +1,5 @@
 
-# Guía Básica De Desarrollo Full Stack
+# Guía básica de desarrollo Full-Stack
 
 Visíteme en :
 
