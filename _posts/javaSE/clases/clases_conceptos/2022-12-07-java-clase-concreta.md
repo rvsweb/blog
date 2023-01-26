@@ -82,7 +82,7 @@ package rvs.ejemplo.clase.abstracta;
 public abstract class Formas {
 
  /**
-  * Metodo abstracto que sera heredado por las clases descendientes
+  * Método abstracto que sera heredado por las clases descendientes
   * 
   * @return - double - Devuelve el area de una forma concreta
   */
@@ -110,7 +110,7 @@ public class Circulo extends Formas {
  private double r;
 
  /**
-  * Metodo heredado de la Clase Abstracta
+  * Método heredado de la Clase Abstracta
   * 
   * @return - double - Devuelve el area de un Circulo
   */
@@ -131,7 +131,7 @@ package rvs.ejemplo.clase.concreta;
 import rvs.ejemplo.clase.abstracta.Formas;
 
 /**
- * Clase Concreta : Rectangulo
+ * Clase Concreta : Rectángulo
  * 
  * @author RVS
  *
@@ -145,7 +145,7 @@ public class Rectangulo extends Formas {
  /**
   * Devuelve la longitud * por el ancho
   * 
-  * @return - double - Devuelve el area de un Rectangulo
+  * @return - double - Devuelve el area de un Rectángulo
   */
  @Override
  public double area() {
@@ -156,58 +156,4 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!-- {% capture fig_img %}
-![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
-</figure>
- -->
-
-<!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/filename.jpg" alt=""> -->
-
-<!-- ![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }}) -->
-
-![diagramaUML](/home/radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-<!-- https://mmistakes.github.io/minimal-mistakes/assets/images/image-alignment-300x200.jpg -->
-
-![diagramaUML](/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//radubu20/proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//proyecto2/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/blog/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](/assets/images/diagramaUML.jpg)
-
-![diagramaUML](//images/diagramaUML.jpg)
-
-![diagramaUML](/images/diagramaUML.jpg)
-
-![diagramaUML](images/diagramaUML.jpg)
-=======
-![diagramaUML](/blog/assets/images/uml/diagramaUML.jpg)
->>>>>>> 5644fb0980788d183765341db5850b9c435aa5a3
-=======
-![diagramaUML](/blog/assets/images/uml/diagramaUML.jpg)
->>>>>>> 5644fb0980788d183765341db5850b9c435aa5a3
+![diagramaUML](//blog/assets/images/uml/diagramaUML.jpg)
