@@ -6,7 +6,7 @@ Visíteme en :
 [Mi Humilde Blog](https://rvsweb.github.io/blog/)
 
 >
-> Blog orientado al aprendizaje básico en los distintos campos del desarrollo de software utilizando herramientas como
+> Blog orientado al aprendizaje básico en los distintos campos del desarrollo de software utilizando herramientas como :
 >
 > GIT , GITHUB y Jekyll principalmente y tratando otros aspectos relacionados con la informática en general como es el
 > desarrollo 
