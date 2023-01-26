@@ -82,7 +82,7 @@ package rvs.ejemplo.clase.abstracta;
 public abstract class Formas {
 
  /**
-  * Metodo abstracto que sera heredado por las clases descendientes
+  * Método abstracto que sera heredado por las clases descendientes
   * 
   * @return - double - Devuelve el area de una forma concreta
   */
@@ -110,7 +110,7 @@ public class Circulo extends Formas {
  private double r;
 
  /**
-  * Metodo heredado de la Clase Abstracta
+  * Método heredado de la Clase Abstracta
   * 
   * @return - double - Devuelve el area de un Circulo
   */
@@ -131,7 +131,7 @@ package rvs.ejemplo.clase.concreta;
 import rvs.ejemplo.clase.abstracta.Formas;
 
 /**
- * Clase Concreta : Rectangulo
+ * Clase Concreta : Rectángulo
  * 
  * @author RVS
  *
@@ -145,7 +145,7 @@ public class Rectangulo extends Formas {
  /**
   * Devuelve la longitud * por el ancho
   * 
-  * @return - double - Devuelve el area de un Rectangulo
+  * @return - double - Devuelve el area de un Rectángulo
   */
  @Override
  public double area() {
