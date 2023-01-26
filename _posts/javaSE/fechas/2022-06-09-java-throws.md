@@ -23,12 +23,19 @@ page_css:
 ## Formateo de fechas
 
 * Mostrar de forma legible las fechas podemos utilizar
+
   * ``DateFormat``
+
     * **Clase abstracta** para **subclases** de formato de **fecha/hora** que formatea y analiza **fechas** u **horas** de forma independiente del idioma.
+
   * ``SimpleDateFormat``
+
     * **Clase concreta** para **formatear** y **analizar fechas** de manera sensible a la configuración regional.
+
     * Esta clase nos permite
+
       * Convertir de ``String/texto`` a ``Date/fecha`` → **(parsear)**
+
       * Convertir de ``Date/fecha`` a ``String/texto`` → **(formatear)**
 
 * Para instanciar un **objeto** del tipo ``SimpleDateFormat`` tenemos que proporcionarle un **patrón** de fecha que deseemos y como opcional una localización mediante el objeto ``locale`` de la clase ``java.util.Locale``

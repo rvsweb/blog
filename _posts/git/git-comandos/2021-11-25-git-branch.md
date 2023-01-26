@@ -17,7 +17,9 @@ tags:
   - git-branch
 ---
 
-## Git branch - (Rama)
+## Concepto
+
+* git branch - (Rama)
 
 * Se puede considera como un **[Puntero]** que siempre señala la rama 'branch' que le indiquemos o nos encontremos
 
@@ -27,11 +29,13 @@ tags:
 
 * Según en la rama en la que nos encontremos puede tener un desarrollo igual o distinto a otra del proyecto
 
-* Una rama puede empezar en cualquier **commit** del **repositorio** del **proyecto principal**
+* Una rama puede empezar en cualquier ``commit`` del **repositorio** del **proyecto principal**
 
-* Los **nuevos commits** siempre se añaden al final del **grafo del historial** de **commits** del proyecto
+* Los ``nuevos commits`` siempre se añaden al final del **grafo del historial** de ``commits`` del proyecto
 
-* **Importante** : Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro **primer commit** la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
+* **Importante**
+
+  * Solo se creará nuestra **primera linea de tiempo funcional** cuando hagamos nuestro ``primer commit`` la cual estará establecida en la rama ``master`` si no hemos creado una rama distinta y nos hemos cambiado a ella mediante ``git checkout <nombre de la rama>``
   
 * Si intentamos cambiarnos de ``rama/branch`` mediante el comando ``git checkout <rama>`` sin que esta ``rama/branch`` exista; nos aparecerá el siguiente mensaje :
 
@@ -39,7 +43,7 @@ tags:
 
 Para saber en que ``rama/branch`` nos encontramos podemos ejecutar los comandos :
 
-``git status`` → On branch master
+``git status`` → On branch ``master``
 
 ```bash
 git branch
@@ -50,7 +54,7 @@ git branch
 
 * En esta imagen podemos ver un ejemplo del funcionamiento y desarrollo de las ``ramas``
 
-![Alt texto](/assets/images/graficos/snapshot-3.jpg "Concepto de Repositorio")
+![Concepto de Repositorio](/blog/assets/images/graficos/snapshot-3.jpg)
 
 * La rama por defecto se llama ``master`` y se crea de forma automática por el sistema ``git`` con el primer ``commit``
 
@@ -263,25 +267,25 @@ Estas ramas se puede ir creando dependiendo de las necesidades del proyecto
 
   * Lo recomendable a la hora de trabajar con nuestro proyecto es crear una ``rama`` a partir de esta ``rama`` llamada **master** como puede ser la ``rama developer`` y fusionar los cambios que sean correcto a la ``rama master`` mediante un ``pull request``
 
-* **developer** → Rama Secundaria **[Rama Padre : Master]**
+* **developer** → Rama Secundaria ``[Rama Padre : Master]``
 
   * Creada a partir de la rama **master** en la mayoría de lo casos
 
   * En la mayoría de los casos tiene las funcionalidades de la aplicación , website , no es aconsejable hacer **commits** desde esta rama, solo para pequeños cambios; ejemplo : Cambiar el texto
 
-* **release** → Rama Terciaria **[Rama Padre : Master]**
+* **release** → Rama Terciaria ``[Rama Padre : Master]``
 
   * Creada a partir de la rama **master** en la mayoría de lo casos
 
   * Se utiliza para entregar en **Producción** , su propósito es habilitar pruebas de clientes con ellas , cuando se terminen las pruebas y estén correctas dichas pruebas se fusionarán con la **rama master**  
 
-* **hotfix** → Rama Terciaria **[Rama Padre : Master]**
+* **hotfix** → Rama Terciaria ``[Rama Padre : Master]``
 
   * Creada a partir de la rama **master** en la mayoría de lo casos
 
   * Esta rama se usa para la solución de incidentes urgentes sobre todo en ambientes de producción que necesitan una rápida respuesta.
 
-* **feature** → Rama Terciaria **[Rama Padre : Developer]**
+* **feature** → Rama Terciaria ``[Rama Padre : Developer]``
 
   * Creada a partir de la rama **developer** en la mayoría de lo casos
 
@@ -293,15 +297,15 @@ Estas ramas se puede ir creando dependiendo de las necesidades del proyecto
 
   * A la vez pueden existir varias ramas que iremos llamando :
 
-    * **feature 1** o **feature A** o **feature Access-DB** → Todo dependiendo de la necesidad
+    * ``feature 1`` o ``feature A`` o ``feature Access-DB`` → Todo dependiendo de la necesidad
 
 ## Ejemplo
 
-![Alt texto](/assets/images/graficos/snapshot-2.jpg "Concepto de Repositorio")
+![Concepto de Repositorio](/blog/assets/images/graficos/snapshot-2.jpg)
 
 ### Aclaraciones
 
-> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ámbito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto.
+> Lo comentado en esta sección no es una obligación pero si entra en las buenas prácticas a la hora de gestionar un proyecto de ámbito general con **GIT** y **GITHUB** además de que es flexible a las necesidades de cada caso o proyecto
 
 > Considerarse como unas pautas básicas libres de seguir pero importante a tener en cuenta ya que cada empresa , equipo de desarrollo o ámbito profesional tendrán sus propias reglas , estándar de desarrollo y demás condiciones de uso en este ámbito del desarrollo de software.
 

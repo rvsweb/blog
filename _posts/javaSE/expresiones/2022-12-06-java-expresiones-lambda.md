@@ -47,7 +47,8 @@ public interface CheckPerson {
   * 
   * Devuelve si el objeto es de tipo Person o no
   * 
-  * Se utiliza para comprobar que el parámetro que recibe el método es un objeto
+  * Se utiliza para comprobar que el parámetro 
+  * que recibe el método es un objeto
   * de tipo Person y devolver un boolean
   * 
   * @param p - objeto - Objeto de la clase Person
@@ -257,8 +258,8 @@ public class Person {
  /**
   * Método de Clase
   * 
-  * Crea una lista de objetos de tipo Person los cuales , cada objeto almacena
-  * una serie de valores predeterminados
+  * Crea una lista de objetos de tipo Person los cuales , 
+  * cada objeto almacena una serie de valores predeterminados
   * 
   * @return - List<Person> - Lista de objetos Person con valores preestablecidos
   */
@@ -286,10 +287,15 @@ public class Main {
 
  public static void main(String[] args) {
 
-// Instanciación e invocación del método 'printPersons(Objeto de tipo List<Person> , Invocación de la clase con el método test implementado)'
+// Instanciación e invocación del método 'printPersons(Objeto de tipo List<Person>
+//  Invocación de la clase con el método test implementado)'
   Person.printPersons(Person.createRoster(), new CheckPersonEligibleForSelectiveService());
 
-// Implementamos la "interface CheckPerson" en la propia invocación del método de la clase Person en una clase anónima y así devolviéndole al método printPersons() la nueva implementación de la funcionalidad creada dentro del bloque de código del cuerpo del método de la interface test(Person p)
+// Implementamos la "interface CheckPerson" en la propia invocación 
+// del método de la clase Person en una clase anónima 
+// y así devolviéndole al método printPersons() la nueva implementación
+// de la funcionalidad creada dentro del bloque de 
+// código del cuerpo del método de la interface test(Person p)
 //                                                    
 // Con este sistema nos ahorramos crear la clase CheckPersonEligibleForSelectiveService
 //                                                    

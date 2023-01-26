@@ -56,7 +56,7 @@ El código ``Hash SHA-1`` nos sirven para identificarlo en el historial del proy
 
     > Significa que siempre irá modificando el último commit que hayas creado
 
-![Alt hacer git restore](/assets/images/commit/commit.jpg/ "hacer git restore --staged <archivo>")
+![git restore](/blog/assets/images/commit/commit.jpg)
 
 ## Ejemplos de Commit
 

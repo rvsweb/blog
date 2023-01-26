@@ -13,7 +13,7 @@ categories:
   - java-manual
   - java-clase
 tags:
-  - java-Optional
+  - java-Optional<T>  
 page_css: 
   - /assets/css/mi-css.css
 ---
@@ -155,7 +155,7 @@ public class Calificaciones {
 }
 ```
 
-* Definimos la ``clase`` donde ejecutaremos el ``código`` y utilizaremos la ``clase Genérica Optional<T>`` para reali zar las comprobaciones necesarias para evitar producir el error ``java.lang.NullPointerException``
+* Definimos la ``clase`` donde ejecutaremos el ``código`` y utilizaremos la ``clase Genérica Optional<T>`` para realizar las comprobaciones necesarias para evitar producir el error ``java.lang.NullPointerException``
 
 ```java
 package com.ej.usando.optional.no.nulls;

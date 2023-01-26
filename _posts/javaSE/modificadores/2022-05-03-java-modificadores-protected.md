@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - Modificadores
+title: Java - Modificador Protected
 date: 2022-05-03
 classes: wide
 toc: true
@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - protected
+## Concepto
 
 * Modificador ``protected``
   * Se aplica a :

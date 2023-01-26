@@ -24,4 +24,4 @@ page_css:
 
   * En resumen : Los archivos rastreados **{Tracked File}** son los archivos que están dentro del **{Staging Area/Index}** y que **GIT** tiene **monitorizado** , **"rastreado"** o que **conoce**
 
-![Alt texto](/assets/images/graficos/ciclo-archivo-rastreado.jpg "Concepto de Repositorio")
+![Concepto de Repositorio](/blog/assets/images/graficos/ciclo-archivo-rastreado.jpg)

@@ -31,6 +31,6 @@ Changes not staged for commit:
 
 ## Git - rm
 
-* Saca el archivo del **{Staging Area/Index}** y lo envian al **(Working Directory)** dejando el archivo sin seguimiento/rastreo **(Untracked)**
+* Saca el archivo del **{Staging Area/Index}** y lo envían al **(Working Directory)** dejando el archivo sin seguimiento/rastreo **(Untracked)**
 
 ``git rm --cached h.txt``

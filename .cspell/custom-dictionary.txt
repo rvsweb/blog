@@ -6,6 +6,7 @@ endunless
 github
 Gson
 inicialización
+instanciación
 instanciada
 instanciado
 instanciados
@@ -14,11 +15,18 @@ instanciar
 javax
 jekyll
 JPQL
+Listin
 markdownify
+multihilos
+pasarle
 POJOS
 preespecificadas
 println
+reutilizable
 rgba
 rvsweb
 serializar
 servlet
+spanish
+subclasifica
+superclase

@@ -29,13 +29,13 @@ page_css:
 
   * Cada ``package`` tiene una serie de ``clases`` que utilizamos en nuestro programa para realizar una **tarea** o **instrucción**
 
-* El sistema antiguo sin ``modulos`` provocaba desorganización a la hora de trabajar con grupos de ``clases`` y las ``dependencias`` entre ellas
+* El sistema antiguo sin ``módulos`` provocaba desorganización a la hora de trabajar con grupos de ``clases`` y las ``dependencias`` entre ellas
 
   * Las ``clases`` de un mismo ``package`` podrían estar ubicadas en 2 ``JAR`` diferentes lo que podía provocar cierta confusión a la hora de invocarlas
 
   * Un ``conjuntos de clases`` pertenece a un determinado ``package`` y ese mismo ``package`` pertenece a ficheros ``JAR``
 
-* A **nivel logico** y **estructural** los ``packages`` son ubicados dentro de los archivos ``JAR-Java Archice`` y este dentro de ``JSE System - LIBRARY``
+* A **nivel lógico** y **estructural** los ``packages`` son ubicados dentro de los archivos ``JAR-Java Archice`` y este dentro de ``JSE System - LIBRARY``
 
 ```java
 // Ejemplo
@@ -67,7 +67,7 @@ Package - java.net → URL.class
 java.lang → Character.class
 ```
 
-#### Formato de Package para Modulos
+#### Formato de Package para Módulos
 
 ```java
 /**
@@ -86,23 +86,23 @@ package com.domain;
   
   * Desglose de todos los elementos que lo componen
 
-![modulo](/rvs.github.io/assets/images/java/modulos/modulos.png)
+![modulo](/blog/assets/images/java/modulos/modulos.png)
 
 1- ``JRE System Library`` - Contiene todos archivos ``JAR`` para poder ejecutar el programa
 
-![JRE](/rvs.github.io/assets/images/java/modulos/JAR.png)
+![JRE](/blog/assets/images/java/modulos/JAR.png)
 
 2- ``Archivos JAR`` - Listado de los archivos ``JAR`` que contiene los ``packages`` los cuales contienen las ``clases`` con las que utilizar en el programa
 
-![JAR](/rvs.github.io/assets/images/java/modulos/jars.png)
+![JAR](/blog/assets/images/java/modulos/jars.png)
 
 3- ``Package`` - Contiene todas las ``clases`` compiladas para poder ser usadas en el programa que vayamos a desarrollar
 
-![Package](/rvs.github.io/assets/images/java/modulos/package.png)
+![Package](/blog/assets/images/java/modulos/package.png)
 
 4- ``Package-Info`` - Contiene el código que relaciona el archivo con el ``package`` del proyecto
 
-![Package_info](/rvs.github.io/assets/images/java/modulos/package_info.png)
+![Package_info](/blog/assets/images/java/modulos/package_info.png)
 
 ```java
 /**
@@ -117,7 +117,7 @@ package modulo.ejemplo.basico.core;
 
 5- ``Clase Principal`` - Elemento del programa donde se invocan las ``clases`` que contiene los ``packages`` del programa
 
-![Clase](/rvs.github.io/assets/images/java/modulos/clase.png)
+![Clase](/blog/assets/images/java/modulos/clase.png)
 
 ```java
 /**
@@ -166,7 +166,7 @@ public class Pago {
 
 6- ``modulo-info.java`` - Archivo que contiene todas las referencias a los ``packages`` que queremos usar y exportar al mismo proyecto o a otros externos con los que trabajar
 
-![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_info.png)
+![Module_info](/blog/assets/images/java/modulos/modulos_info.png)
 
 ```java
 /**
@@ -189,7 +189,7 @@ module ConceptoModuloA {
 
 7- ``modulo-info.java`` - Modulo
 
-![Module_info](/rvs.github.io/assets/images/java/modulos/modulos_externo.png)
+![Module_info](/blog/assets/images/java/modulos/modulos_externo.png)
 
 ```java
 /**

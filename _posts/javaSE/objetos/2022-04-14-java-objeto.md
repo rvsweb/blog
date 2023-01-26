@@ -36,6 +36,49 @@ page_css:
 
 * Se utiliza para invocar los **métodos** que contenta la **clase** a la que este apuntando
 
+> En cierto modo se puede considerar la POO una forma de "envoltura o introducir/apuntar" un objeto dentro de otro como si fueran capas de una cebolla para así poder invocar los atributos y métodos que lo componen
+>
+> Cada capa es un "objeto" que tiene fijadas las características como son los atributos y métodos del objeto anterior
+
+* Ejemplo
+
+```java
+
+ public static <T> void printObject(Object obj) {
+
+// Objeto 'cls' almacena las características
+// del objeto de tipo Person
+// el cual "contiene/apunta" los atributos 'name' y 'age'
+// y los métodos 'getName()' y 'getAge()' 
+  Class<?> cls = obj.getClass();
+
+// Objeto fields "envuelve/contiene/apunta" a los métodos de la clase genérica Class<?> 
+  Field[] fields = cls.getDeclaredFields();
+
+// Recorremos todos los elementos del array de tipo 'fields'
+  for (Field field : fields) {
+   try {
+// Invocamos tanto el método 'getName()' de la clase Person 
+// y el método get para obtener los valores almacenados
+// dentro del mismo objeto 
+    System.out.println(field.getName() + ": " + field.get(obj));
+   } catch (IllegalAccessException e) {
+    e.printStackTrace();
+   }
+  }
+ }
+
+ public static void main(String[] args) {
+  Person p = new Person("John", 30);
+  Person.printObject(p);
+ }
+}
+
+// Salida
+# name: John
+# age: 30
+```
+
 ### Proceso de creación de un Objeto
 
 1. Declaración
@@ -57,7 +100,7 @@ page_css:
 
 * Ahora le asignaremos una **copia física** del **objeto** con el que estamos trabajando y le **asignaremos** la **variable** anteriormente **declarada** que define el **tipo de dato/objeto** que sera
 
-  * Esto realiza utilizando el operador ``new`` el cual **instancia** una **clase** asignando dinanicamente ``(en tiempo de ejecución)`` memoria para un **nuevo objeto** y devolviendo una **referencia** a esa **memoria**
+  * Esto realiza utilizando el operador ``new`` el cual **instancia** una **clase** asignando dinámicamente ``(en tiempo de ejecución)`` memoria para un **nuevo objeto** y devolviendo una **referencia** a esa **memoria**
 
     * Esta **referencia** se almacenará en la variable del **tipo de dato** anteriormente declarada
 

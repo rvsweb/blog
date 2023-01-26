@@ -81,7 +81,7 @@ Directorios principales del proyecto
 
 ### • Commit - (Snapshot) - Instantánea/Captura
 
-![Alt texto](/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio")
+![Concepto de Repositorio](/blog/assets/images/graficos/snapshot-1.jpg "Concepto de Repositorio")
 
 Commit - Instantánea/Captura (Snapshot) de los archivos / directorios
 
@@ -98,11 +98,11 @@ Commit - Instantánea/Captura (Snapshot) de los archivos / directorios
   * Las secuencias de **commits** siempre están ordenados por la fecha más reciente
   * Los nuevos **commits** se añaden siempre al final de la **rama**
 
-![Alt texto](/assets/images/graficos/commit-rama-repositorio.jpg "Concepto de Repositorio")
+![Alt texto](/blog/assets/images/graficos/commit-rama-repositorio.jpg "Concepto de Repositorio")
 
 Un ejemplo sobre las ``ramas`` que actuan como "Punteros" y los ``commit`` como "Contenedor" de archivos y datos
 
-![Alt texto](/assets/images/graficos/snapshot-2.jpg "Concepto de Repositorio")
+![Alt texto](/blog/assets/images/graficos/snapshot-2.jpg "Concepto de Repositorio")
 
 Cada vez que realizamos un ``git commit -m "Mensaje"`` se crea un nuevo circulo **○** y el puntero **↑** de la ``rama`` avanza con él
 
@@ -110,7 +110,7 @@ Cada vez que realizamos un ``git commit -m "Mensaje"`` se crea un nuevo circulo 
 
 Es el sistema básico que recomienda usar **GIT** sobre como trabajar de forma estandarizada y correcta
 
-![Alt texto](/assets/images/graficos/snapshot-4.jpg "Concepto de Repositorio")
+![Alt texto](/blog/assets/images/graficos/snapshot-4.jpg "Concepto de Repositorio")
 
 ## Working Tree Clean
 

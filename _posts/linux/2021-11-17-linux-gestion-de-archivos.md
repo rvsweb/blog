@@ -78,7 +78,7 @@ cd ../../ # Bajan 2 niveles desde el directorio padre del sistema de archivos
 addgroup # Crea un grupo llamado 'migrupo'
 ```
 
-#### Ejemplo
+#### Ejemplo addgroup
 
 ```bash
 sudo addgroup migrupo # Crea un grupo llamado 'migrupo'
@@ -98,7 +98,7 @@ chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
 -rw-rw-r-- 1 sysadmin migrupo      0 Dec 17 13:43 archivo.txt    
 ```
 
-#### Ejemplo
+#### Ejemplo chmod
 
 ```bash
 chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
@@ -113,7 +113,7 @@ chgrp migrupo archivo.txt # Cambia la propiedad del grupo de un archivo
 chmod # Cambiar el modo de acceso  
 ```
 
-#### Ejemplo
+#### Ejemplo stat
 
 ```bash
 chmod go-rwx file1 # Hace visible a otros usuarios
@@ -135,7 +135,7 @@ stat archivo.ext
 chown # Cambia el propietario del archivo
 ```
 
-#### Ejemplo
+#### Ejemplo cp
 
 ```bash
 chown root archivo.txt

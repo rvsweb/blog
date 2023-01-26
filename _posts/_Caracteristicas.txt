@@ -25,7 +25,7 @@ tags:
 
 - Crear un menu que tenga por referencia cada titulo del articulo.
 
-# Caja con enlaces a los titulos
+# Caja con enlaces a los títulos
 toc: true
 toc_label: "My table of Contents"
 toc_icon: "arrows-alt"
@@ -34,6 +34,5 @@ toc_icon: "arrows-alt"
 page_css: 
   - /assets/css/mi-css.css
 
-# Divide en 2 el contenido escrito 
-|| Divide en 2 el contenido escrito ||
-
+# RUTA PARA IMÁGENES
+# ![Foo](/blog/assets/images/diagramaUML.jpg)

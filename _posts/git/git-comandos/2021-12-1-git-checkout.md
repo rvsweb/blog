@@ -107,7 +107,7 @@ Dos Flechas ( Integración de un ``commit`` con otro o de una **rama** con otra)
 
 * Gráfico de ejemplo para seguir los conceptos
 
-![Grafico del Ancestros y Padres](https://github.com/rvsweb/guia-basica-git-github/blob/master/assets/images/checkout/grafico-checkout-padre-ancestro.jpg?raw=true "Grafico del Ancestros y Padres")
+![Grafico](/blog/assets/images/checkout/grafico-checkout-padre-ancestro.jpg)
 
 ```bash
 git checkout <commit>^n

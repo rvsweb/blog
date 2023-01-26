@@ -21,7 +21,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Clase Entity
+## Concepto
 
 * Clase ``persistencia`` en una ``base de datos`` debe anotarse con ``javax.persistence.Entity``
 

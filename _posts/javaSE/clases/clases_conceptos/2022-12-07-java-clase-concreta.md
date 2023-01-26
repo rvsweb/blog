@@ -121,6 +121,8 @@ public class Circulo extends Formas {
 }
 ```
 
+<!-- Puedes explicarme con ejemplos de código cómo se utiliza el polimorfismo en Java , por favor -->
+
 * Clase Rectángulo
 
 ```java
@@ -154,6 +156,7 @@ public class Rectangulo extends Formas {
 
 ### Diagrama UML
 
+<<<<<<< HEAD
 <!-- {% capture fig_img %}
 ![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }})
 {% endcapture %}
@@ -201,3 +204,6 @@ public class Rectangulo extends Formas {
 ![diagramaUML](/images/diagramaUML.jpg)
 
 ![diagramaUML](images/diagramaUML.jpg)
+=======
+![diagramaUML](/blog/assets/images/uml/diagramaUML.jpg)
+>>>>>>> 5644fb0980788d183765341db5850b9c435aa5a3

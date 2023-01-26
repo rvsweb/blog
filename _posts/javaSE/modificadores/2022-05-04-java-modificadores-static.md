@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Modificador - static
+## Concepto
 
 * Modificador de **Clase** , de **Atributo** o de **Métodos**
 
