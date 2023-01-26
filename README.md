@@ -8,10 +8,11 @@ Visíteme en :
 >
 > Blog orientado al aprendizaje básico en los distintos campos del desarrollo de software utilizando herramientas como :
 >
-> GIT , GITHUB y Jekyll principalmente y tratando otros aspectos relacionados con la informática en general como es el
-> desarrollo 
->
-> Front-end & Back-end , sistema operativos bajo GNU/Linux y la programación en general.
+> GIT , GITHUB y Jekyll 
+> 
+> Tratando principalmente otros aspectos relacionados con la informática en general como es el
+> desarrollo front-end , back-end , los sistema operativos bajo GNU/Linux y Windows
+> 
 
 * El principal objetivo de este **humilde blog** es añadir todo el contenido que voy aprendiendo a lo largo del tiempo para mejorar mis conocimientos , añadir y organizar todos los proyectos que vaya realizando en el futuro
 
