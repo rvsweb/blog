@@ -312,7 +312,15 @@ public class ClaseConcreta extends MiClase {
 
 ## Resumen
 
-* Las ``clases abstractas`` son una especie de ``fabricas de estructuras de métodos`` sin implementar
+* Las ``clases abstractas`` implementan algunos ``metodos`` para las ``clases hijas`` o ``subclases`` para que puedan invocarlos y usarlos
+
+  * Crean sus propios ``metodos abstractos`` sin implementación
+
+      ```java
+      public abstract int getNumber();
+      ```
+
+* Las ``clases abstractas`` son una especie de ``fabricas de estructuras de métodos`` algunos **con o sin implementación**
 
   * Otras clases descendientes ``subclases`` las extiende mediante la implementación para darle una ``funcionalidad especifica`` según la necesidad o requisitos del programa
 
