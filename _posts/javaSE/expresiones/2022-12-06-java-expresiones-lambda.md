@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Expresiones Lambda
+## Concepto
 
 * Se utilizan entre otros motivos para resolver los problemas que producían el uso las ``clases anónimas``
 
