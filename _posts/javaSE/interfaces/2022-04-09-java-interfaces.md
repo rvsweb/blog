@@ -31,18 +31,20 @@ page_css:
     * El contenido del método se lo añade las clases concretas o abstractas que la implementen o extiendan la interface
 
 ```java
+// Cabecera / firma de un método
    void myMethod();
 ```
 
 ## Estructura
 
-* Declaración Interface
+* Declaración ``Interface``
 
-  * Debe empezar la ``interface`` con la letra mayúscula **I** y el nombre de la clase que vayamos a usar
+  * Debe empezar con la letra mayúscula **I** y el nombre de la clase que vayamos a usar
 
-  * Ejemplo : **IControlador** , **IConnector** , **IBase** , **IRemote** , **IDataBaseLocal** , **IRoot**
+    * Ejemplo : **IControlador** , **IConnector** , **IBase** , **IRemote** , **IDataBaseLocal** , **IRoot**
 
 ```java
+// Definición de una interfaz
   public interface <NombreInterface> { 
     // Código de la interface ...  
   } 
@@ -50,7 +52,9 @@ page_css:
 
 ## Campos / Atributos
 
-* Son ``públicos``  ``estáticos`` y ``finales``
+* Las ``interfaces`` permiten definir e implementar ``CONSTANTES``
+
+  * Atributos ``públicos`` , ``estáticos`` y ``finales``
 
   * **CONSTANTES**
 
@@ -62,7 +66,7 @@ page_css:
 
 ## Métodos
 
-* Se declaran ``públicos``
+Se declaran ``públicos``
 
 * **Sin la implementación** o sin el **bloque de código**
 
@@ -71,37 +75,116 @@ page_css:
     * Ejemplo
 
         ```java
+        // Definición firma / cabecera de un metodo abstracto en una Interfaz
           public int getCalcularPI(int x , int y );
         ```
 
+* Pueden ser : 
+
+  * ``abstractos`` 
+    
+    * No hace falta añadirle el modificador ``abstract`` porque se sobrentiende y no necesitan ser implementarlos 
+
+    ```java
+    // Cabecera/Firma de un método abstracto sin implementación
+    void metodoAbstracto();
+    ```
+
 > **Son elementos del tipo abstracto**
 >
-> **"Te Dicen Que Hacer** pero **No Como Hacerlo"**
+> **"El Método Te Dice Que Hacer** pero **No Como Hacerlo"**
 
-* Desde la versión de ``Java 8`` es posible declarar ``métodos default``
+* Desde la versión de ``Java 8`` es posible declarar ``métodos default`` y ``métodos estáticos``
 
-  * Contienen una implementación ``predeterminada/preestablecida``
+  * Contienen una implementación ``predeterminada o preestablecida`` dentro de la ``interfaz``
+
+* Tipo ``default`` 
+
+    * Métodos que se crean y se implementan dentro de la ``interfaz``
 
     * Utiliza la palabra clave ``"default"`` y la ``signatura del método``
 
+    * Se pueden ejecutar invocando el objeto de la clase que implemente la ``interfaz`` mediante la invocando al constructor de la clase en cuestión
+
+      ```java
+      // Método por defecto de la interfaz
+        default void myDefaultMethod() {
+        // Ejemplo : Código con la implementación 
+          System.out.println("Realizar acción / tarea ");
+        }
+      ```
+
+* Tipo ``estáticos`` 
+
+  * Métodos que se crean y se implementan dentro de la ``interfaz`` 
+
+  * Se puede invocar el método a través de la implemementación de la interfaz
+
         ```java
-          default void myDefaultMethod() {
-            // Ejemplo : Código con la implementación 
-            System.out.println("Realizar acción / tarea ");
-          }
+        // Método estático con implementación
+        static void metodoEstatico() {
+          System.out.println("Este es un método estático");
+        }
         ```
 
-* Permiten declarar ``métodos estáticos`` igual que en las ``clases concretas``
+  * Permiten declarar ``métodos estáticos`` igual que en las ``clases concretas``
 
   * Contiene una implementación ``preestablecida``
 
-      ```java
-      // Declarar método estático en una interfaz
-      static void myStaticMethod() {
-        // código de implementación aquí
-            System.out.println("Realizar acción / tarea ");
-      }
-      ```
+          ```java
+          // Declarar método estático en una interfaz
+          static void myStaticMethod() {
+            // código de implementación aquí
+                System.out.println("Realizar acción / tarea definida ");
+          }
+          ```
+
+### Ejemplos de código
+
+```java
+// Definición de la Interfaz
+public interface EjemploInterfaz {
+
+    // Método abstracto sin implementación
+    void metodoAbstracto();
+
+    // Método default con implementación
+    default void metodoDefault() {
+        System.out.println("Este es un método default");
+    }
+
+    // Método estático con implementación
+    static void metodoEstatico() {
+        System.out.println("Este es un método estático");
+    }
+}
+
+// Clase Concreta implementando la Interfaz
+public class EjemploClase implements EjemploInterfaz {
+
+    // Implementación del método abstracto
+    public void metodoAbstracto() {
+        System.out.println("Este es un método abstracto implementado");
+    }
+
+    // No es necesario implementar el método default,
+    //  ya que tiene una implementación por defecto en la interfaz
+
+    // No es necesario implementar el método estático, 
+    // ya que se llama directamente desde la interfaz
+ 
+  public static void main(String[] args) {
+// Creación de una instancia de la clase y llamada a los métodos
+  EjemploClase instancia = new EjemploClase();
+
+  instancia.metodoAbstracto(); // Salida: "Este es un método abstracto implementado"
+
+  instancia.metodoDefault(); // Salida: "Este es un método default"
+
+  EjemploInterfaz.metodoEstatico(); // Salida: "Este es un método estático"	
+  }
+}
+```
 
 * ``Interfaz`` proporcionan
 
@@ -140,6 +223,7 @@ public interface MyInterface {
 
 // Una clase puede implementar una interfaz usando la palabra clave "implements"
 public class MyClass implements MyInterface {
+
   // La clase debe proporcionar una implementación para todos los métodos abstractos de la interfaz
   public void myMethod() {
     // código de implementación aquí
@@ -150,6 +234,7 @@ public class MyClass implements MyInterface {
     // nueva implementación aquí
   }
 }
+
 ```
 
 ## Ejemplo de uso
@@ -200,6 +285,7 @@ public interface IControlador {
 * Todos los nombres de la ``interfaces`` se colocan después de la palabra clave ``implements`` y **separados por comas**
 
 ```java
+// Ejemplo de una clase que implementa dos interfaces
 public class Bird implements Animal, Flyable
 ```
 
@@ -218,16 +304,21 @@ public class Bird implements Animal, Flyable
 * Tenemos las siguientes ``clases`` y ``interfaces``
 
 ```java
+// Definición de una Interfaz
 public interface Animal {
   
+  // Define la cabecera de un metodo
     public void makeSound();
 }
 
+// Definición de una Interfaz
 public interface Flyable {
   
+  // Define la cabecera de un metodo
     public void fly();
 }
 
+// Clase concreta que define dos interfaces
 public class Bird implements Animal, Flyable {
 
     public void makeSound() {

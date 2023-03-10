@@ -27,6 +27,7 @@ page_css:
 ## Ejemplo Método ``Consumer<T>``
 
 ```java
+
 @FunctionalInterface
   public interface Consumer<T> {
     void accept(T t);
