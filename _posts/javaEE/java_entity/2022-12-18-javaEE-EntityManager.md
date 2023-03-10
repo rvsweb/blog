@@ -59,7 +59,7 @@ page_css:
 * La cadena ``"mi_configuracion"`` es el nombre del ``persistence unit`` que se define en el ``archivo persistence.xml``
 
 ```java
-EntityManagerFactory emf = Persistence.createEntityManagerFactory("mi_configuracion");
+EntityManagerFactory emf = Persistence.createEntityManagerFactory("mi_configuracion.xml");
 EntityManager em = emf.createEntityManager();
 ```
 
