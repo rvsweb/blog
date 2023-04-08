@@ -20,7 +20,7 @@ page_css:
 
 ## Concepto
 
-* ``Interfaz`` es una ``clase abstracta pura``
+* ``Interfaz`` es una ``Clase Abstracta Pura``
 
   * Todos los ``métodos`` que contienen son ``implícitamente abstractos``
 
@@ -74,10 +74,10 @@ Se declaran ``públicos``
 
     * Ejemplo
 
-        ```java
-        // Definición firma / cabecera de un metodo abstracto en una Interfaz
-          public int getCalcularPI(int x , int y );
-        ```
+    ```java
+    // Definición firma / cabecera de un metodo abstracto en una Interfaz
+      public int getCalcularPI(int x , int y );
+    ```
 
 * Pueden ser : 
 
@@ -87,7 +87,7 @@ Se declaran ``públicos``
 
     ```java
     // Cabecera/Firma de un método abstracto sin implementación
-    void metodoAbstracto();
+      void metodoAbstracto();
     ```
 
 > **Son elementos del tipo abstracto**
@@ -106,13 +106,13 @@ Se declaran ``públicos``
 
     * Se pueden ejecutar invocando el objeto de la clase que implemente la ``interfaz`` mediante la invocando al constructor de la clase en cuestión
 
-      ```java
-      // Método por defecto de la interfaz
-        default void myDefaultMethod() {
-        // Ejemplo : Código con la implementación 
-          System.out.println("Realizar acción / tarea ");
-        }
-      ```
+    ```java
+    // Método por defecto de la interfaz
+      default void myDefaultMethod() {
+      // Ejemplo : Código con la implementación 
+      System.out.println("Realizar acción / tarea ");
+      }
+    ```
 
 * Tipo ``estáticos`` 
 
@@ -120,24 +120,24 @@ Se declaran ``públicos``
 
   * Se puede invocar el método a través de la implemementación de la interfaz
 
-        ```java
+    ```java
         // Método estático con implementación
         static void metodoEstatico() {
           System.out.println("Este es un método estático");
         }
-        ```
+    ```
 
   * Permiten declarar ``métodos estáticos`` igual que en las ``clases concretas``
 
   * Contiene una implementación ``preestablecida``
 
-          ```java
-          // Declarar método estático en una interfaz
-          static void myStaticMethod() {
-            // código de implementación aquí
-                System.out.println("Realizar acción / tarea definida ");
-          }
-          ```
+    ```java    
+    // Declarar método estático en una interfaz
+    static void myStaticMethod() {
+    // código de implementación aquí
+      System.out.println("Realizar acción / tarea definida ");
+    }
+    ```
 
 ### Ejemplos de código
 
@@ -174,7 +174,7 @@ public class EjemploClase implements EjemploInterfaz {
     // ya que se llama directamente desde la interfaz
  
   public static void main(String[] args) {
-// Creación de una instancia de la clase y llamada a los métodos
+// Creación de una instancia de la clase y llamada a los métodos[label](http://127.0.0.1:1123/sec-rpumzzfnlnqljhfpzivl/enterprise)
   EjemploClase instancia = new EjemploClase();
 
   instancia.metodoAbstracto(); // Salida: "Este es un método abstracto implementado"
