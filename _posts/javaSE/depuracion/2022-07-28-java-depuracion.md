@@ -33,7 +33,8 @@ page_css:
 
 * Botón ``F6`` : **Step Over** ![depuracion](/blog/assets/images/depuracion_imagenes/Depuracion_F6_Step_Over.png)
 
-* **Avanza una línea** dentro del **código** que tengamos escrito dentro del programa
+  * **Avanza una línea** dentro del **código** que tengamos escrito dentro del programa
+  
   * ``Salta la pausa producida por el Debug y continua con la siguiente línea``
 
 * Botón ``F8`` : **Resume** ![depuracion](/blog/assets/images/depuracion_imagenes/Depuracion_F6_Step_Over.png)
