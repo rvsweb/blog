@@ -28,7 +28,7 @@ page_css:
 
 * Introducido para ser utilizados como una forma rápida de ``crear clases`` de soporte de datos
 
-## Objetivo de estas clases
+## Objetivo de este modificador
 
   * Contener datos 
   
