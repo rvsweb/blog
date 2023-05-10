@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Java - JAR & Manifiesto 
-date: 2022-05-08
+date: 2023-05-08
 classes: wide
 toc: true
 toc_label: "Tabla de contenido"
@@ -21,21 +21,21 @@ page_css:
 
 ## Concepto
 
-* **JAR** ( Java ARchive)  
+* **JAR** ``( Java ARchive)``  
 
   * Archivo comprimido 
   
-  * Se utiliza para empaquetar , distribuir un conjunto archivos en una sola unidad
+  * Se utiliza para empaquetar y distribuir un conjunto archivos en una sola unidad
   
 * **MANIFEST.MF**
 
-  * Archivo de texto contiene metadatos sobre el contenido del archivo ``JAR``
+  * Archivo de texto contiene ``metadatos`` sobre el contenido del archivo ``JAR``
 
   * Se encuentra en el interior de los archivos ``JAR``
 
   * Organizados por pares ``nombre-valor`` en diferentes secciones
 
-  * Si se va a usar un archivo ``JAR`` como ejecutable el archivo del ``manifiesto`` debe especificar la clase principal de la aplicación
+  * Si se va a usar un archivo ``JAR`` como ejecutable el archivo del ``manifiesto`` debe especificar la ``clase principal`` de la aplicación
 
   * Ejemplo
 
@@ -47,7 +47,7 @@ page_css:
 
 ### Crear archivo JAR sin MANIFEST.MF
 
-1. Creamos una clase Java 
+1. Creamos una clase ``Java`` 
 
 ```java
 // Ruta de los directorios de la clase MiClasePrincipal
@@ -63,7 +63,7 @@ public class MiClasePrincipal{
 }
 ```
 
-2. Compilamos el archivo ``java`` desde la linea de comandos
+2. Compilamos el archivo ``.java`` desde la linea de comandos
 
 ```java
 javac MiClasePrincipal.java
@@ -77,7 +77,7 @@ java -cf <NuevoNombre.jar> *.class
 
 ### Crear archivo JAR con MANIFEST.MF
 
-1. Creamos una clase Java 
+1. Creamos una clase ``Java`` 
 
 ```java
 // Ruta de los directorios de la clase MiClasePrincipal
@@ -120,7 +120,7 @@ java -cf <NuevaClasePrincipal.jar> *.class
         * MiClasePrincipal2.jar
     ```
 
-5. Construimos el archivo MANIFEST.MF desde cualquier editor de texto y lo añadimos a la ruta de directorios del proyecto donde tenemos el archivo que queremos transformar en JAR
+5. Construimos el archivo ``MANIFEST.MF`` desde cualquier editor de texto y lo añadimos a la ruta de directorios del proyecto donde tenemos el archivo que queremos transformar en ``JAR``
 
     ```java
     * java_manifiesto
@@ -142,7 +142,7 @@ java -cf <NuevaClasePrincipal.jar> *.class
     Class-Path: lib/MiClasePrincipal1.jar lib/MiClasePrincipal2.jar // Archivos JAR externos que usará el proyecto
     ```
 
-7. Compilamos el proyecto con la clase principal y con el MANIFEST.MF
+7. Compilamos el proyecto con la clase principal y con el ``MANIFEST.MF``
 
     * Desde la ruta del proyecto principal
 
@@ -162,7 +162,6 @@ jar cvfm NuevaClasePrincipal.jar MANIFEST.MF .\com\miempresa\NuevaClasePrincipal
 ```java
   NuevaClasePrincipal.jar
 ```
-
 
 9. Ejecutamos el archivo ``JAR`` desde la linea de comandos ``cmd`` para comprobar si funciona
 
