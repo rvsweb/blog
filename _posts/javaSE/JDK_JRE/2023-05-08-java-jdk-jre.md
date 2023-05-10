@@ -14,6 +14,7 @@ categories:
 tags:
   - java-JDK
   - java-JRE
+  - java-JVM
 page_css: 
   - /assets/css/mi-css.css
 ---
