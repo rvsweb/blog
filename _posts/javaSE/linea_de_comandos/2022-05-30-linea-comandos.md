@@ -17,9 +17,9 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Ejecutar comando Java desde la línea de comandos
+## Concepto
 
-* Cuando tenemos que ejecutar programas escritos en **Java** desde la línea de comandos tenemos que ejecutarlos desde la raíz de la lista de paquetes que lo componen
+* Cuando tenemos que ejecutar programas escritos en **Java** desde la ``línea de comandos`` tenemos que ejecutarlos desde la **raíz** de la lista de **paquetes** que lo componen
 
 ### Ejemplo
   
@@ -35,15 +35,15 @@ public class CapturaNumero {
 }
 ```
 
-* La **ruta** dentro del **directorio de trabajo** para compilar el programa sería
+* La **ruta** dentro del **Directorio de trabajo - Working Directory** para compilar el programa sería
 
 ```java
 // usuario@hostname 
 //   ↓     ↓           "Ruta Completa de Directorios hasta la fuente del programa" 
 //   ↓     ↓            ↓                                                      Comando 
 //   ↓     ↓            ↓                                                      ↓    Package/Paquetes del Proyecto
-//   ↓     ↓            ↓                                                      ↓    ↓                                1-Argumentos
-//   ↓     ↓            ↓                                                      ↓    ↓                                ↓
+//   ↓     ↓            ↓                                                      ↓      ↓                               1-Argumentos
+//   ↓     ↓            ↓                                                      ↓      ↓                               ↓
 usuario@torre:/mnt/d/Proyectos_Eclipse/Programacion_Java/ConceptosBasicos/src$ javac conceptos/comandos/CapturaNumero 3
 ```
 
@@ -54,9 +54,8 @@ usuario@torre:/mnt/d/Proyectos_Eclipse/Programacion_Java/ConceptosBasicos/src$ j
 //   ↓     ↓           "Ruta Completa de Directorios hasta la fuente del programa" 
 //   ↓     ↓            ↓                                                      Comando 
 //   ↓     ↓            ↓                                                      ↓    Package/Paquetes del Proyecto
-//   ↓     ↓            ↓                                                      ↓    ↓                                1-Argumentos
-//   ↓     ↓            ↓                                                      ↓    ↓                                ↓
+//   ↓     ↓            ↓                                                      ↓     ↓                               1-Argumentos
+//   ↓     ↓            ↓                                                      ↓     ↓                               ↓
 usuario@torre:/mnt/d/Proyectos_Eclipse/Programacion_Java/ConceptosBasicos/src$ java conceptos/comandos/CapturaNumero 3
 // Salida por consola
-3
 ```
