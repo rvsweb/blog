@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Java - JAR & Manifiesto 
+title: Java - JAR & MANIFEST.MF
 date: 2023-05-08
 classes: wide
 toc: true
