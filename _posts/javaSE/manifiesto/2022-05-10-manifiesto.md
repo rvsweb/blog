@@ -45,7 +45,7 @@ page_css:
     Class-Path: lib/mi-libreria1.jar lib/mi-libreria2.jar
     ```
 
-### CREAR ARCHIVO JAR SIN MANIFEST.MF
+### Crear archivo JAR sin MANIFEST.MF
 
 1. Creamos una clase Java 
 
@@ -75,7 +75,7 @@ javac MiClasePrincipal.java
 java -cf <NuevoNombre.jar> *.class
 ```
 
-### CREAR ARCHIVO JAR CON MANIFEST.MF
+### Crear archivo JAR con MANIFEST.MF
 
 1. Creamos una clase Java 
 
@@ -168,5 +168,5 @@ jar cvfm NuevaClasePrincipal.jar MANIFEST.MF .\com\miempresa\NuevaClasePrincipal
 
 ```java
 java -jar NuevaClasePrincipal.jar
-// Salida → Ejemplo de archivo JAR
+// Salida → Ejemplo de archivo JAR    
 ```
