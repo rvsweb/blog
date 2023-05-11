@@ -18,11 +18,17 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Palabra clave : throws
+## Concepto
 
-* La palabra clave ``throws`` (que no debe confundirse con la palabra clave ``throw``) se usa en las declaraciones de ``métodos`` para indicar que el ``método`` puede lanzar el tipo de **excepción** dado.
+* **Palabra clave Java**
 
-* Las declaraciones ``throws`` le indican que debe estar preparado para detectar ``excepciones`` de tipo el cual el hayamos indicado en la cabecera del **método** declarado
+* Se utiliza en la ``firma`` de un ``método`` para ``indicar`` que este ``método`` podría ``lanzar`` uno de los ``tipos de excepciones`` enumerados
+
+* Indica que en ese ``método`` podría producirse una ``excepción`` y que esta será ``lanzada`` ``(no capturada dentro del método)`` para que sea atrapada en un ``nivel superior``
+
+* No debe confundirse con la palabra clave ``throw`` se usa en las declaraciones de ``métodos`` para indicar que el ``método`` puede ``lanzar`` el tipo de **excepción** dado
+
+* Las declaraciones ``throws`` le **indican** que debe ``estar preparado`` para detectar ``excepciones`` de tipo el cual el hayamos indicado en la cabecera del **método** declarado
 
 ```java
 class Ejemplo {
@@ -32,7 +38,6 @@ public static void lanzarThrows() throws NullPointerException {
    n.toString();
   }
  }
-}
 ```
 
 * Se pueden especificar varios tipos de **excepción**
@@ -46,6 +51,6 @@ void lanzarThrows() throws NullPointerException , InterruptedException, TimeOutE
 }
 ```
 
-Las **excepciones** comprobadas que se lanzan en el **método** deben declararse en la cláusula ``throws`` a menos que estén atrapadas dentro del **método**.
+* Las **excepciones** comprobadas que se lanzan en el **método** deben declararse en la cláusula ``throws`` a menos que estén atrapadas dentro del **método**
 
-Las **excepciones no verificadas** no tienen este requisito y, por lo tanto, no deben mencionarse en la declaración ``throws``
+* Las **excepciones no verificadas** no tienen este requisito por lo que no deben mencionarse en la declaración ``throws``
