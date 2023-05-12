@@ -19,7 +19,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Error
+## Concepto
 
 > ``Errores Irrecuperables``
 

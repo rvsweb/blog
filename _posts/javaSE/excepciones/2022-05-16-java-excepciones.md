@@ -19,7 +19,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Excepciones
+## Concepto
 
 * Es un **evento** que ocurre durante la ``ejecución de un programa`` que rompe el **flujo normal** de ``ejecución``
 
@@ -42,12 +42,16 @@ throws , throw , try , catch , finally
 ### Errores Compilación
 
 * **Errores sintácticos**
+
   * Cuando escribimos mal el nombre de una ``palabra clave`` , llamada a un ``método`` o ``clase``
 
 * **Errores de Compilación**
   * Cuando llamamos a un ``método`` que no existe
+
   * Nos falta o nos sobra ``parámetros`` en la invocación a un ``método`` de cualquier tipo
+ 
   * Asignación de una ``variable`` de ``tipo entero`` a otra del tipo carácter
+  
   * Al faltarnos un ``paréntesis`` al cerrar un ``método``
 
 ### Tipos de Excepciones
@@ -75,11 +79,17 @@ throws , throw , try , catch , finally
 ### Subclase Error de la clase Throwable
 
 * Problemas graves que una aplicación no podría detectar ya que estos errores son condiciones anormales que nunca deberían ocurrir
+
   * No podemos anticiparnos al error o al problema ni podemos recuperarnos de ellos
+
     * Ejemplo
+
       * ThreadDeath error
+
       * Problema de hardware
+
       * Desbordamiento de memoria (StackOverFlow) en la JVM
+
       * Falta de memoria
 
 #### Subclase de la Clase Error
@@ -96,4 +106,5 @@ throws , throw , try , catch , finally
 ### Subclase Exception de la clase Throwable
 
 * La ``clase Exception`` y sus ``subclases`` son una forma de indicar que una aplicación podría querer capturar y gestionar los errores que producen en ella
+ 
   * ``RuntimeException`` sería la subclase descendiente de ``Exception`` más usada

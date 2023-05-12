@@ -19,7 +19,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Excepciones - Clase Throwable
+## Concepto
 
 * **API** principal de las **Excepciones** producidas en Java
   * Son **clases** que contienen ``constructores`` , ``métodos`` y ``atributos``

@@ -18,7 +18,7 @@ page_css:
   - /assets/css/mi-css.css
 ---
 
-## Runtime Exception
+## Concepto
 
 * Es la **superclase** de aquellas ``excepciones`` que se pueden lanzar durante el funcionamiento normal de la **máquina virtual de Java**.
   
