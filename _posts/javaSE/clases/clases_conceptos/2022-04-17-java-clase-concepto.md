@@ -20,35 +20,39 @@ page_css:
 
 ## Concepto
 
-> 'Clase' en realidad se refieren a un 'tipo de referencia'
+* Clase 
+  
+  *Se asemeja a un ``plano`` o una ``plantilla`` que ``define`` la ``estructura`` y el ``comportamiento`` de un ``tipo de objeto``*
+
+  > ``Clase`` en realidad se refieren a un ``tipo de referencia``
 
 * Una **clase** proporciona el **modelo** para la creación de **objetos***
 
-* Las clases están compuestas por
+* Las ``clases`` están compuestas por
 
-  * Atributos
+  * ``Atributos``
 
-    * Variable de instancias
+    * ``Variable`` de ``instancias``
 
-    * Variable de clase
+    * ``Variable`` de ``clase``
 
-    * Constantes
+    * ``Constantes``
 
-  * Métodos
+  * ``Métodos``
 
-    * De instancia
+    * De ``Instancia``
 
-    * De clase
+    * De ``Clase``
 
 > Declarar una **clase** permite crear ``un nuevo tipo de dato``
 
-* Se entiende como un **archivo** del tipo ``.java``
+  * Se entiende como un **archivo** del tipo ``.java``
   
-* Su interior tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
+* Su ``interior`` tiene definida una **estructura básica** sobre las características las cuales tendrá un **elemento concreto** dentro del **sistema** o **programa** que vayamos a **crear/diseñar**
 
-* Una clase proporciona un **modelo** para los objetos que vayamos a construir
+* Una ``clase`` proporciona un **modelo** para los ``objetos`` que vayamos a construir
 
-  * Se podría decir que es una especie de :
+  * Se podría decir que es una especie de
 
     * **Patrón** ←→ **Molde** ←→ **Ejemplo** ←→ **Modelo**
   
