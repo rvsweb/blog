@@ -43,9 +43,9 @@ System.out.println("Mensaje");
   
   * La clase ``System`` contiene una ``instancia`` de la ``clase PrintStream``
   
-* La ``variable de instancia`` se llama → ``out``
+* La ``variable de instancia`` se llama → ``.out``
   
-  * Pertenece a la ``clase PrintStream`` contiene los ``métodos`` → ``print()`` y ``println()`` 
+  * Pertenece a la ``clase PrintStream`` contiene los ``métodos`` → ``.print()`` y ``.println()`` 
   
 * ``System.out`` nos da la ``variable de instancia → out`` de la clase ``PrintStream``  el cual nos permite llamar al método ``print()`` o ``println()`` en esta ``variable de instancia``
 
@@ -91,22 +91,23 @@ System.out.println("Mensaje");
 
 ## Resumen
 
-* ``System`` es una clase en el paquete ``java.lang`` 
+* ``System`` es una clase final del paquete ``java.lang`` 
 
-* ``out`` es una ``variable estática`` en la ``clase System`` que es una ``instancia`` de la ``clase PrintStream``
+* ``out`` es una ``variable estática final`` dentro de la ``clase System`` creada a partir de una ``instancia`` de la ``clase PrintStream``
+
+  * Se usa para invocar los ``métodos`` de la ``clase PrintStream`` para mostrar datos
 
   * La ``clase PrintStream`` tiene varios ``métodos`` para imprimir ``datos`` incluidos ``print()`` y ``println()``
 
-* Estamos llamando al ``método print()`` en la ``variable out`` que es una ``instancia`` de la ``clase PrintStream``
+* Estamos llamando a los ``métodos print()`` y ``método println()``  mediante el uso de la ``variable out`` la cual es una ``instancia`` de la ``clase PrintStream``
 
-* En el caso de System.``out`` es una ``variable estática`` en la ``clase System`` que se ``inicializa`` con una ``instancia`` de la ``clase PrintStream``
-
-  * Significa que ``todas`` las ``instancias`` de la ``clase System`` comparten la misma variable ``out`` y esta ``variable`` es una ``instancia`` de la ``clase PrintStream``
+  * Significa que ``todas`` las ``instancias`` de la ``clase System`` comparten la misma variable ``out``
 
 ### Aclaración 
 
-* Una ``variable estática`` es una ``variable`` que pertenece a la ``clase`` en lugar de alguna ``instancia`` de la ``clase``
+* Una ``variable estática final`` es una ``variable`` que reserva memoría para ese elemento el cual pertenece a toda la ``clase`` en lugar de ser una copia de esa ``variable`` de la propia ``clase`` 
 
   * Significa que 
   
     > ``Solo hay una copia`` de la ``variable`` para todas las ``instancias`` de la ``clase``
+  
