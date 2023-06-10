@@ -67,3 +67,4 @@ page_css:
   * Significa
     
     * Que si un ``subproceso`` está ``invocando`` una ``operación`` de ``lectura`` o ``escritura`` ese ``subproceso`` **no se bloquea** hasta que haya algunos ``datos`` para ``leer`` o los ``datos`` estén completamente ``escritos`` en lugar de que el ``subproceso`` continúe con otra cosa
+  
