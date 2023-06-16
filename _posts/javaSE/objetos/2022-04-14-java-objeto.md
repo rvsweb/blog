@@ -20,25 +20,31 @@ page_css:
 
 ## Concepto de Objeto
 
-* Cuando declaramos una clase en Java , se está creando un nuevo tipo de datos.
+> Cuando declaramos una ``clase`` en Java se está creando un nuevo ``tipo de datos``
 
-* Todos los **objetos** heredan de la **clase Object**
+  * **Objetos** cambiará ``propiedades`` de otros **objetos** por medio de los ``métodos``
 
-* Todos los objetos se crean a partir de una clase
+  * Los ``métodos`` solo pueden ejecutarse cuando el **objeto** existe 
 
-* Es un **tipo de variable** que apunta a una **dirección de memoria** especifica asignada por el operador ``new``
+  * Todos los **objetos** heredan de la **clase Object**
 
-* Cuando creamos un **nuevo objeto** se reserva **espacio en memoria** para ese **objeto**
+  * Todos los ``objetos`` se crean a partir de una ``clase``
 
-* Apunta al **constructor** de la **clase** lo que está ``instanciando/creando``
+    * Es un **tipo de variable** que apunta a una **dirección de memoria** especifica asignada por el operador ``new``
 
-* Almacena el valor recibido por parte del **constructor** en el caso de que lo tengas asignados
+    * Cuando creamos un **nuevo objeto** se reserva **espacio en memoria** para ese **objeto**
 
-* Se utiliza para invocar los **métodos** que contenta la **clase** a la que este apuntando
+  * Apunta al **constructor** de la **clase** lo que está ``instanciando/creando``
 
-> En cierto modo se puede considerar la POO una forma de "envoltura o introducir/apuntar" un objeto dentro de otro como si fueran capas de una cebolla para así poder invocar los atributos y métodos que lo componen
+  * Almacena el ``valor`` recibido por parte del **constructor** en el caso de que lo tengas asignados
+
+  * Se utiliza para invocar los **métodos** que contenta la **clase** a la que este apuntando
+
+> Se considera la ``POO`` con una forma de **envoltura/introducir/apuntar** de un ``objeto`` 
+>  
+>  * Dentro de cada ``objeto`` como si fueran ``capas`` de una cebolla y así poder invocar los ``atributos`` y ``métodos`` que lo componen
 >
-> Cada capa es un "objeto" que tiene fijadas las características como son los atributos y métodos del objeto anterior
+> Cada capa es un ``objeto`` que tiene fijadas las características como son los ``atributos`` y ``métodos`` del ``objeto`` anterior
 
 * Ejemplo
 

@@ -20,13 +20,17 @@ page_css:
 
 ## Concepto
 
-* Clase 
+* ``Clase`` 
   
-  *Se asemeja a un ``plano`` o una ``plantilla`` que ``define`` la ``estructura`` y el ``comportamiento`` de un ``tipo de objeto``*
+  **Se asemeja a un ``plano`` o una ``plantilla`` que ``define`` la ``estructura`` y el ``comportamiento`` de un ``tipo de objeto``**
 
-  > ``Clase`` en realidad se refieren a un ``tipo de referencia``
+  * **Clases** son las que almacenaran las ``propiedades`` y ``métodos`` que contendran un **objeto**
 
-* Una **clase** proporciona el **modelo** para la creación de **objetos***
+  * ``Objeto`` cambiará las ``propiedades`` de otros **objetos** por medio de los métodos de esa u otras ``clases``
+  
+    * ``Clase`` en realidad se refieren a un ``tipo de referencia``
+
+* Una **clase** proporciona el **modelo/plantilla** para la creación de **objetos**
 
 * Las ``clases`` están compuestas por
 
