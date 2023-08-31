@@ -36,7 +36,7 @@ page_css:
 
 * Ofrecer una ``interfaz`` sencillas en ciertas partes de la aplicación
 
-> Necesario cuando se utilizan API de bajo nivel como JDBC en las que las operaciones sobre la base de datos conllevan utilización de sentencias SQL que queremos aislar de otras capas de la aplicación
+> Necesario cuando se utilizan API de bajo nivel como **JDBC** en las que las operaciones sobre la base de datos conllevan utilización de sentencias **SQL** que queremos aislar de otras capas de la aplicación
 
 ## Utilidad
 
@@ -46,17 +46,17 @@ page_css:
 
   * ``Métodos`` del ``DAO`` que se **emparejan** con las operaciones ``CRUD``
 
-    1. **C** → ``Create``
+    1. **C** → **``Create``**
 
-    2. **R** → ``Read``
+    2. **R** → **``Read``**
 
-    3. **U** → ``Update``
+    3. **U** → **``Update``**
 
-    4. **D** → ``Delete``
+    4. **D** → **``Delete``**
 
 > Actúa de intermediario entre la aplicación y la base de datos
 
-* ``Clases DAO`` habrá una por ``entidad`` o ``tabla`` de la ``base de datos`` y tendremos ``métodos`` para realizar ``consultas genéricas`` o ``adaptadas`` a nuestra ``lógica de negocio``
+* **``Clases DAO``** habrá una por **``entidad``** o **``tabla``** de la **``base de datos``** y tendremos **``métodos``** para realizar **``consultas genéricas``** o **``adaptadas``** a nuestra **``lógica de negocio``**
 
 ```java
 package project.orm.manager.dao;
@@ -113,9 +113,11 @@ public interface Dao<T> {
 }
 ```
 
-* **Patrón  de diseño** que proporciona una ``interface abstracta`` hacia algún tipo de base de datos mediante otro mecanismo de ``persistencia``
+* **Patrón  de diseño**
 
-  > **Patrón** aplicable a la mayoría de los **lenguajes de programación** que necesitan uso de la **persistencia** y **conexión** con una **base de datos** asociados a las aplicaciones ``Java EE`` y las ``base de datos relacionales`` a las que se accede mediante las ``API`` de ``JDBC``
+  * Proporciona una ``interface abstracta`` hacia algún tipo de base de datos mediante otro mecanismo de ``persistencia``
+
+> **Patrón** aplicable a la mayoría de los **lenguajes de programación** que necesitan uso de la **persistencia** y **conexión** con una **base de datos** asociados a las aplicaciones ``Java EE`` y las ``base de datos relacionales`` a las que se accede mediante las ``API`` de ``JDBC``
 
 * Asignar llamadas de aplicaciones de ``capa de persistencia (DAO)`` proporciona especificas operaciones de datos sin especificar detalles de la ``base de datos``
 
@@ -153,9 +155,9 @@ como apoyar las necesidades de la ``DBMS especifico`` , un esquema de ``base de 
 
 ## Herramientas Populares de los ORM para realizar DAO
 
-1. Frameworks : ``Hibernate, iBATIS``
+1. **Frameworks** : ``Hibernate, iBATIS``
 
-2. Library : ``JPA, como Apache OpenJPA``
+2. **Library** : ``JPA, como Apache OpenJPA``
 
 ## Casos de uso
 
