@@ -93,7 +93,7 @@ public Persona(){
 
 ### Modificador final
 
-* Una clase con el modificador ``final`` no permite la creación de objetos
+* Una **clase** con el modificador ``final`` no permite la **creación** de **objetos**
 
 ```java
 // Modificador "final" establece claramente la intención

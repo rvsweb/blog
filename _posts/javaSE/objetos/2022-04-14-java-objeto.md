@@ -87,7 +87,7 @@ page_css:
 
 ### Proceso de creación de un Objeto
 
-1. Declaración
+1. **Declaración**
 
 * Declarar la variable de **tipo de clase**
   * Esta **variable** **no define** un **objeto** , simplemente es una **variable** que puede **referirse** a un **objeto**
@@ -102,7 +102,7 @@ page_css:
    Gato           gato; // Se ha declarado una referencia a un objeto de tipo Coche
 ```
 
-2. Instanciación e Inicialización
+2. **Instanciación** e **Inicialización**
 
 * Ahora le asignaremos una **copia física** del **objeto** con el que estamos trabajando y le **asignaremos** la **variable** anteriormente **declarada** que define el **tipo de dato/objeto** que sera
 
@@ -209,7 +209,7 @@ System.out.println(caja2.alto);
 
 ### Desvinculación de un objeto
 
-* Si ambas variables de instancia como 'caja1' y 'caja2' **apuntan/referencia** al mismo objeto , no estarán vinculadas o enlazadas de ninguna otra manera posible
+* Si ambas variables de instancia como **'caja1'** y **'caja2'** *apuntan/referencia* al mismo *objeto* , no estarán *vinculadas* o *enlazadas* de ninguna otra manera posible
 
 ```java
 // Declaración e instanciación de las "variable de instancia" de la clase Caja
@@ -221,4 +221,6 @@ Caja caja2 = caja1;
 caja1 = null;
 ```
 
-* Nota : Cuando pasamos la **referencia** de un **objeto** a un **método**, el **parámetro** que lo recibe se referirá al **mismo objeto** al que hace **referencia** el **argumento** no al de la **clase** que lo instancio
+* Nota 
+
+  *  Cuando pasamos la **referencia** de un **objeto** a un **método**, el **parámetro** que lo recibe se referirá al **mismo objeto** al que hace **referencia** el **argumento** no al de la **clase** que lo instancio

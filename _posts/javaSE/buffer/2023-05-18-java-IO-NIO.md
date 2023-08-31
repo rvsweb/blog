@@ -40,13 +40,13 @@ page_css:
 
   * ``Java IO`` es un ``paquete`` orientado a ``secuencias`` 
 
-    * Significa 
+    * **Significa** 
   
       * Que puede ``leer`` uno o más ``bytes`` a la vez desde una ``secuencia``
   
   * ``Java NIO`` es un paquete orientado al ``buffer``
   
-    * Significa 
+    * **Significa** 
       
       * Que los ``datos`` se leen en un ``buffer`` desde el cual se procesan más utilizando un canal
 
@@ -54,7 +54,7 @@ page_css:
 
 * ``Java IO`` es un ``IO`` de **bloqueo**
 
-  * Significa 
+  * **Significa** 
   
     * Que si un ``subproceso`` está ``invocando`` una ``operación`` de ``lectura`` o ``escritura`` ese ``subproceso`` **se bloquea** hasta que haya algunos ``datos`` para ``leer`` o los ``datos estén`` completamente escritos
   
@@ -64,7 +64,7 @@ page_css:
   
 * ``Java NIO`` es un ``IO`` **sin bloqueo**
     
-  * Significa
+  * **Significa**
     
     * Que si un ``subproceso`` está ``invocando`` una ``operación`` de ``lectura`` o ``escritura`` ese ``subproceso`` **no se bloquea** hasta que haya algunos ``datos`` para ``leer`` o los ``datos`` estén completamente ``escritos`` en lugar de que el ``subproceso`` continúe con otra cosa
   
