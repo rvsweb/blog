@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Docker
+title: Docker Básico
 date: 2025-03-28
 classes: wide
 toc: true
@@ -41,6 +41,7 @@ sudo docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 my
 
 Aquí está el desglose de lo que hace cada parte:
 
+```
 -d: Ejecuta el contenedor en segundo plano (modo "detached").
 
 --rm: Elimina el contenedor automáticamente después de que se detenga.
@@ -52,7 +53,7 @@ Aquí está el desglose de lo que hace cada parte:
 -p 3306:3306: Mapea el puerto 3306 del contenedor al puerto 3306 del host, permitiendo el acceso a MySQL desde el exterior.
 
 mysql: Especifica la imagen de Docker que se utilizará (en este caso, la imagen oficial de MySQL).
-
+```
 
 * Comando que se utiliza para listar los contenedores Docker que están actualmente en ejecución en tu sistema.
 
@@ -74,6 +75,7 @@ docker exec -it mysql bash
 
 Aquí está el desglose:
 
+```
 docker exec: Ejecuta un comando dentro de un contenedor en ejecución.
 
 -it: Estas opciones combinadas habilitan un modo interactivo:
@@ -85,6 +87,7 @@ docker exec: Ejecuta un comando dentro de un contenedor en ejecución.
 mysql: Es el nombre del contenedor al que quieres acceder.
 
 bash: Especifica que deseas abrir el shell Bash dentro del contenedor.
+```
 
 * Comando que se utiliza para conectar al servidor MySQL desde el terminal. 
 
@@ -94,12 +97,13 @@ mysql -uroot -proot
 
 Aquí está el desglose de lo que significa:
 
+```
 mysql: Ejecuta el cliente MySQL, que permite interactuar con la base de datos.
 
 -u root: Especifica el usuario con el que te quieres conectar, en este caso, root, que es el usuario administrador de MySQL.
 
 -p root: Proporciona la contraseña del usuario root. Aquí, la contraseña también es root
-
+```
 
 * Este comando se utiliza para ejecutar un contenedor de Docker que aloja una instancia de phpMyAdmin, una herramienta gráfica para gestionar bases de datos MySQL. 
 
@@ -109,18 +113,18 @@ docker run --name phpmyadmin -v phpmyadmin_data:/etc/phpmyadmin/config.user.inc.
 
 Aquí está el desglose:
 
-1. **`docker run`**: Inicia un nuevo contenedor con los parámetros que sigan.
+```
+**`docker run`**: Inicia un nuevo contenedor con los parámetros que sigan.
 
-2. **`--name phpmyadmin`**: Da el nombre `phpmyadmin` al contenedor.
+**`--name phpmyadmin`**: Da el nombre `phpmyadmin` al contenedor.
 
-3. **`-v phpmyadmin_data:/etc/phpmyadmin/config.user.inc.php`**: Monta un volumen llamado `phpmyadmin_data` en el contenedor, enlazado al archivo de configuración personalizado de phpMyAdmin.
+**`-v phpmyadmin_data:/etc/phpmyadmin/config.user.inc.php`**: Monta un volumen llamado `phpmyadmin_data` en el contenedor, enlazado al archivo de configuración personalizado de phpMyAdmin.
 
-4. **`--link mysql:db`**: Crea un enlace entre el contenedor `phpmyadmin` y el contenedor `mysql`, asignándole el alias `db` para que phpMyAdmin pueda comunicarse con la base de datos MySQL.
+**`--link mysql:db`**: Crea un enlace entre el contenedor `phpmyadmin` y el contenedor `mysql`, asignándole el alias `db` para que phpMyAdmin pueda comunicarse con la base de datos MySQL.
 
-5. **`-p 82:80`**: Mapea el puerto 80 del contenedor al puerto 82 del sistema anfitrión, permitiendo acceder a phpMyAdmin en `http://localhost:82`.
+**`-p 82:80`**: Mapea el puerto 80 del contenedor al puerto 82 del sistema anfitrión, permitiendo acceder a phpMyAdmin en `http://localhost:82`.
 
-6. **`-d`**: Ejecuta el contenedor en segundo plano (modo "detached").
+**`-d`**: Ejecuta el contenedor en segundo plano (modo "detached").
 
-7. **`phpmyadmin`**: Utiliza la imagen oficial de phpMyAdmin desde Docker Hub.
-
-
+**`phpmyadmin`**: Utiliza la imagen oficial de phpMyAdmin desde Docker Hub.
+```
