@@ -115,7 +115,6 @@ docker run --name phpmyadmin -v phpmyadmin_data:/etc/phpmyadmin/config.user.inc.
 
 Aquí está el desglose:
 
-
 ```
 **`docker run`**: Inicia un nuevo contenedor con los parámetros que sigan.
 
