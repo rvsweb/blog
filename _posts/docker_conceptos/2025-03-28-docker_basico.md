@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Docker
+title: Docker Básico
 date: 2025-03-28
 classes: wide
 toc: true
@@ -55,7 +55,6 @@ Aquí está el desglose de lo que hace cada parte:
 mysql: Especifica la imagen de Docker que se utilizará (en este caso, la imagen oficial de MySQL).
 ```
 
-
 * Comando que se utiliza para listar los contenedores Docker que están actualmente en ejecución en tu sistema.
 
 ```
@@ -106,7 +105,6 @@ mysql: Ejecuta el cliente MySQL, que permite interactuar con la base de datos.
 -p root: Proporciona la contraseña del usuario root. Aquí, la contraseña también es root
 ```
 
-
 * Este comando se utiliza para ejecutar un contenedor de Docker que aloja una instancia de phpMyAdmin, una herramienta gráfica para gestionar bases de datos MySQL. 
 
 ```
@@ -130,4 +128,3 @@ Aquí está el desglose:
 
 **`phpmyadmin`**: Utiliza la imagen oficial de phpMyAdmin desde Docker Hub.
 ```
-
