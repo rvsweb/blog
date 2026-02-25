@@ -22,26 +22,26 @@ tags:
 ## Concepto
 
 * Comando que se utiliza en sistemas operativos basados en Linux (como Ubuntu) para instalar Docker Compose.
- 
-```
+
+```bash
 sudo apt install docker-compose
 ```
 
 * Comando para comprobar la versión con la que se esta trabajando
 
-```
+```bash
 docker-compose --version
 ```
 
 * Comando que ejecuta un contenedor Docker para una base de datos MySQL
 
-```
+```bash
 sudo docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql
 ```
 
 Aquí está el desglose de lo que hace cada parte:
 
-```
+```bash
 -d: Ejecuta el contenedor en segundo plano (modo "detached").
 
 --rm: Elimina el contenedor automáticamente después de que se detenga.
@@ -57,25 +57,25 @@ mysql: Especifica la imagen de Docker que se utilizará (en este caso, la imagen
 
 * Comando que se utiliza para listar los contenedores Docker que están actualmente en ejecución en tu sistema.
 
-```
+```bash
 docker ps
 ```
 
 * Comando que se utiliza para detener un contenedor Docker que esté en ejecución
 
-```
+```bash
 docker stop <nombre-ID-contenedor>
 ```
 
-* Comando que se utiliza para acceder al interior del contenedor Docker llamado "mysql" y abrir una sesión interactiva en el shell del contenedor. 
+* Comando que se utiliza para acceder al interior del contenedor Docker llamado "mysql" y abrir una sesión interactiva en el shell del contenedor.
 
-```
+```bash
 docker exec -it mysql bash
 ```
 
 Aquí está el desglose:
 
-```
+```bash
 docker exec: Ejecuta un comando dentro de un contenedor en ejecución.
 
 -it: Estas opciones combinadas habilitan un modo interactivo:
@@ -89,15 +89,15 @@ mysql: Es el nombre del contenedor al que quieres acceder.
 bash: Especifica que deseas abrir el shell Bash dentro del contenedor.
 ```
 
-* Comando que se utiliza para conectar al servidor MySQL desde el terminal. 
+* Comando que se utiliza para conectar al servidor MySQL desde el terminal.
 
-```
+```bash
 mysql -uroot -proot
 ```
 
 Aquí está el desglose de lo que significa:
 
-```
+```bash
 mysql: Ejecuta el cliente MySQL, que permite interactuar con la base de datos.
 
 -u root: Especifica el usuario con el que te quieres conectar, en este caso, root, que es el usuario administrador de MySQL.
@@ -105,15 +105,15 @@ mysql: Ejecuta el cliente MySQL, que permite interactuar con la base de datos.
 -p root: Proporciona la contraseña del usuario root. Aquí, la contraseña también es root
 ```
 
-* Este comando se utiliza para ejecutar un contenedor de Docker que aloja una instancia de phpMyAdmin, una herramienta gráfica para gestionar bases de datos MySQL. 
+* Este comando se utiliza para ejecutar un contenedor de Docker que aloja una instancia de phpMyAdmin, una herramienta gráfica para gestionar bases de datos MySQL.
 
-```
+```bash
 docker run --name phpmyadmin -v phpmyadmin_data:/etc/phpmyadmin/config.user.inc.php --link mysql:db -p 82:80 -d phpmyadmin
 ```
 
 Aquí está el desglose:
 
-```
+```bash
 **`docker run`**: Inicia un nuevo contenedor con los parámetros que sigan.
 
 **`--name phpmyadmin`**: Da el nombre `phpmyadmin` al contenedor.

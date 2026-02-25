@@ -20,7 +20,7 @@ Visíteme en :
 
 * Espero que otros usuarios que se estén iniciando en el mundo de la informática y la programación les puedan servir entre otras cosas de aprendizaje, recordatorio y complemento en sus estudios de informática.
 
-Gracias por vuestra atención 😊
+Gracias por vuestra atención
 
 * * *
 
