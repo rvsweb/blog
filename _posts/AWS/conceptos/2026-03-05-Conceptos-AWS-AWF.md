@@ -1,6 +1,6 @@
 ---
 layout: single
-title: AWS Conceptos 
+title: AWS Conceptos - WAF 
 date: 2026-03-05
 classes: wide
 toc: true
@@ -13,9 +13,11 @@ categories:
   - Cloud Foundations
 tags:
   - aws-conceptos
+  - aws-conceptos-waf
 page_css: 
   - /assets/css/mi-css.css
 ---
+
 ## AWS Conceptos
 
 > AWS (Amazon Web Services) es una plataforma de servicios en la nube que ofrece una amplia gama de servicios para computación, almacenamiento, bases de datos, análisis, inteligencia artificial y más. Aquí hay algunos conceptos clave relacionados con AWS:
