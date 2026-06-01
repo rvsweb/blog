@@ -70,3 +70,4 @@ curl -H "X-Forwarded-For: 192.168.1.100" http://vulnerable-website.com
     > Ataques de fuerza bruta "amplificados" (en un solo intento puede probar miles de contraseñas) y ataques DoS.
 
   Para proteger tu sitio web, es recomendable deshabilitar el acceso a `xmlrpc.php` si no se necesita o implementar medidas de seguridad adicionales como firewalls o plugins de seguridad.
+  
